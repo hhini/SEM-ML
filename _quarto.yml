@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: docs
+
+manuscript:
+  article: index.qmd
+
+jupyter: python3
+
+format:
+  html:
+    comments:
+      hypothesis: true
+  docx: default
+  jats: default
+
+   #(other formats)
+
+#format:
+ # pdf:
+  #  pdf-engine: lualatex
+#
+    
+#    emoji: true
+#    mainfont: "Microsoft YaHei"
+ #   geometry: top=2cm, bottom=2cm, left=2.5cm, right=2.5cm
+
+    
+
+ 
+  
+
+execute:
+  
+  freeze: true
+  echo: true
+
+
+
+
