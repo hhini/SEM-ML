@@ -224,7 +224,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>结合随机森林与SEM，识别影响精神分裂症患者主观幸福感的关键因素。</p></li>
 <li><p>通过ML筛选变量，再用lavaan构建路径模型，实现因果解释与预测并重。</p></li>
-<li><p>发表在《Translational Psychiatry》，IF ≈ 7.7。</p></li>
+<li><p>发表在《Translational Psychiatry》，IF ≈ 7.9。</p></li>
 </ul></li>
 <li><p>📱 <strong>智能穿戴设备采纳研究</strong>： Bou Nassif et al.&nbsp;(2022)</p>
 <ul>
@@ -342,11 +342,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="复现一篇论文" class="level2">
-<h2 class="anchored" data-anchor-id="复现一篇论文">复现一篇论文🤖</h2>
+</section>
+<section id="复现一篇论文" class="level1">
+<h1>复现一篇论文🤖</h1>
 <p><strong><code>最好学习的方法就是看相关论文，然后学习论文知识，然后复现学习，所以啥也不说了，直接真刀真枪开干就完了</code></strong></p>
-<section id="replicating-research-on-subjective-well-being-in-schizophrenia-a-guide-to-generating-synthetic-data-for-sem-and-machine-learning-精神分裂症患者主观幸福感研究sem-和机器学习合成数据生成指南论文链接" class="level4">
-<h4 class="anchored" data-anchor-id="replicating-research-on-subjective-well-being-in-schizophrenia-a-guide-to-generating-synthetic-data-for-sem-and-machine-learning-精神分裂症患者主观幸福感研究sem-和机器学习合成数据生成指南论文链接">Replicating Research on Subjective Well-Being in Schizophrenia: A Guide to Generating Synthetic Data for SEM and Machine Learning 精神分裂症患者主观幸福感研究：SEM 和机器学习合成数据生成指南<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12236327/#s5">论文链接</a></h4>
+<section id="replicating-research-on-subjective-well-being-in-schizophrenia-a-guide-to-generating-synthetic-data-for-sem-and-machine-learning-精神分裂症患者主观幸福感研究sem-和机器学习合成数据生成指南" class="level4">
+<h4 class="anchored" data-anchor-id="replicating-research-on-subjective-well-being-in-schizophrenia-a-guide-to-generating-synthetic-data-for-sem-and-machine-learning-精神分裂症患者主观幸福感研究sem-和机器学习合成数据生成指南">Replicating Research on Subjective Well-Being in Schizophrenia: A Guide to Generating Synthetic Data for SEM and Machine Learning 精神分裂症患者主观幸福感研究：SEM 和机器学习合成数据生成指南</h4>
+</section>
+<section id="论文链接-2024-sep-7-51411181133.-doi-10.1093schbulsbae156---if7.9我也不知道为什么这种文章有7分做生信累死累活还拿不到5分吐槽一下麻了" class="level4">
+<h4 class="anchored" data-anchor-id="论文链接-2024-sep-7-51411181133.-doi-10.1093schbulsbae156---if7.9我也不知道为什么这种文章有7分做生信累死累活还拿不到5分吐槽一下麻了"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12236327/#s5">论文链接</a> 2024 Sep 7 ; 51(4):1118–1133. doi: 10.1093/schbul/sbae156 - IF=7.9(我也不知道为什么这种文章有7分，做生信累死累活还拿不到5分，吐槽一下，麻了🥶）</h4>
 <p><strong><em>！现在我不以社会科学的角度解析这篇文章，只用统计学和代码来解析如何处理</em></strong></p>
 <p>因为我现在没有相关的数据，所以我只能用代码模拟和文章差不多的数据</p>
 <ul>
@@ -359,7 +363,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="使用-python-生成合成数据" class="level4">
 <h4 class="anchored" data-anchor-id="使用-python-生成合成数据">使用 Python 生成合成数据</h4>
 <p>以下 Python 代码演示了如何生成一个与论文中描述的特征近似的合成数据集。此代码使用 numpy 和 pandas 库创建一个数据框，其中包含与原始研究中的变量具有相似统计特性和相关性的变量。变量不用Chinese</p>
-<div id="710d308c" class="cell" data-execution_count="1">
+<div id="59340f4d" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入所需的库</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入所需的库</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -623,7 +627,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>包是可以认为是游戏的mod,都是大佬收集的算法或者其他的代码来实现你需要的功能，这些都是地基</li>
 </ul>
-<div id="9a2300a6" class="cell" data-execution_count="2">
+<div id="8067cc86" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入所需的库</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd                 <span class="co"># 导入 pandas 用于读取和处理数据</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np                  <span class="co"># 导入 numpy 用于数值计算</span></span>
@@ -637,7 +641,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="第二步导入数据" class="level4">
 <h4 class="anchored" data-anchor-id="第二步导入数据">第二步导入数据🤤</h4>
 <p>就是我们要的数据，即调查的数据，一般是XLSX(excel表格)，csv(数据格式万金油)，或者其他格式</p>
-<div id="16cb581d" class="cell" data-execution_count="3">
+<div id="c464736a" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 1. 加载并准备数据 ---</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Load and Prepare the Data</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -655,7 +659,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>定义目标</strong>： 本文机器学习模型的主要目标并非预测准确的主观幸福感 (SWB) 评分，而是将患者分为两组：具有“高水平 SWB”的患者和不具有“高水平 SWB”的患者。我们遵循本文的思路，创建了一个二元目标变量 ( High_SWB )，其中 80 分及以上被视为“高”（编码为 1），低于 80 分则被视为“低”（编码为 0）。</li>
 </ul>
-<div id="1a1b4ef1" class="cell" data-execution_count="4">
+<div id="54e02885" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 定义目标变量 (Y)</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 根据论文，"高水平SWB" 定义为 SWN 总分达到或超过 80</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 我们创建一个名为 'High_SWB' 的新列，1 表示高SWB，0 表示非高SWB</span></span>
@@ -678,7 +682,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>特征变换：对特征进行变换，以便于机器学习模型的训练和预测。比如标准化，归一化，独热编码，等等。 对于一些其他数据类型，比如字符型，如是否为男或者女性，一般可以用1代表男，0代表女，因为模型一般无法了解字的真实含义，但是数字可以。 一般来说，对于特征工程这个步骤需要花费很多时间。我们这个例子的数据比较符合机器学习的类型，不需要太多更改</li>
 </ol>
 <p>独热编码是将分类变量转换为二进制变量，即将每个分类变量转换为多个二进制变量，每个二进制变量表示一个分类。比如这个例子教育是分为三类，且都为字符型，我们可以把教育分为三个二进制（0/1）变量，每个二进制变量表示一个分类。</p>
-<div id="64e71d35" class="cell" data-execution_count="5">
+<div id="92cf4c47" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 处理分类变量</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 'Education' 列是文本类型，机器学习模型需要数值输入。</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 我们使用 "独热编码" (One-Hot Encoding) 将其转换为数值列。</span></span>
@@ -686,7 +690,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> pd.get_dummies(X, columns<span class="op">=</span>[<span class="st">'Education'</span>], drop_first<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>接下来我们要进行数据标准化，他的统计学意义我就不说了，但是为什么要进行标准化，标准化可以会将所有特征缩放到均值为0，标准差为1的范围，对于逻辑回归等线性模型很重要，而对于一些随机森林，神经网络等等的黑箱模型不太重要，但是我还是进行标准化。</p>
-<div id="b8150b8e" class="cell" data-execution_count="6">
+<div id="8125d561" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 数据标准化 (对于逻辑回归等线性模型很重要)</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># StandardScaler 会将所有特征缩放到均值为0，标准差为1的范围</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#先导入我们需要的包</span></span>
@@ -723,7 +727,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>当然，随着现在算法的升级，还有很多算法在他们之上有更好的表现，也要根据数据和模型的用途进行匹配</strong></p>
 <p>📊 为什么要比较多个模型？ 不同模型对数据的敏感性不同，适合的场景也不同。</p>
 <p>比较多个模型可以找到最稳定、最准确的预测方法。</p>
-<div id="5c18260a" class="cell" data-execution_count="7">
+<div id="11f8466c" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  定义要比较的模型 ---</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 依旧导入需要的包</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
@@ -734,7 +738,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 我们将所有模型储存在一个字典中，方便循环调用</span></span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>models <span class="op">=</span> {</span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Logistic Regression (LR)"</span>: LogisticRegression(max_iter<span class="op">=</span><span class="dv">1000</span>, random_state<span class="op">=</span><span class="dv">42</span>),</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Random Forest (RF)"</span>: RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">500</span>, max_depth<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>, n_jobs<span class="op">=-</span><span class="dv">1</span>),</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Random Forest (RF)"</span>: RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">500</span>, max_depth<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>),</span>
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Gradient Boosting (GBM)"</span>: GradientBoostingClassifier(n_estimators<span class="op">=</span><span class="dv">200</span>, max_depth<span class="op">=</span><span class="dv">3</span>, random_state<span class="op">=</span><span class="dv">42</span>),</span>
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"XGBoost (XGB)"</span>: xgb.XGBClassifier(n_estimators<span class="op">=</span><span class="dv">200</span>, max_depth<span class="op">=</span><span class="dv">3</span>, use_label_encoder<span class="op">=</span><span class="va">False</span>, eval_metric<span class="op">=</span><span class="st">'logloss'</span>, random_state<span class="op">=</span><span class="dv">42</span>),</span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"LightGBM (LGBM)"</span>: lgb.LGBMClassifier(n_estimators<span class="op">=</span><span class="dv">200</span>, max_depth<span class="op">=</span><span class="dv">3</span>, random_state<span class="op">=</span><span class="dv">42</span>, verbosity<span class="op">=-</span><span class="dv">1</span>)</span>
@@ -752,7 +756,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>. 最后我们计算 5 次的平均性能指标（如 AUC），得到一个更稳定的评估结果。</p>
 <p>. 这种方法比单次训练/测试划分更可靠，能减少“运气好/坏”带来的误差。</p>
 <p>. 📊 为什么选择 AUC？ . AUC 是衡量模型区分能力的指标，值越接近 1，模型越好。</p>
-<div id="46f4c912" class="cell" data-execution_count="8">
+<div id="116d2e10" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> {} <span class="co"># 创建一个空字典来储存结果</span></span>
@@ -790,31 +794,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stderr">
 <pre><code>d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
 
-[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+[12:04:37] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
 Parameters: { "use_label_encoder" } are not used.
 
 
 d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
 
-[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+[12:04:37] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
 Parameters: { "use_label_encoder" } are not used.
 
 
 d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
 
-[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+[12:04:37] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
 Parameters: { "use_label_encoder" } are not used.
 
 
 d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
 
-[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+[12:04:37] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
 Parameters: { "use_label_encoder" } are not used.
 
 
 d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
 
-[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+[12:04:37] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
 Parameters: { "use_label_encoder" } are not used.
 
 </code></pre>
@@ -824,15 +828,26 @@ Parameters: { "use_label_encoder" } are not used.
   LightGBM (LGBM): 平均 AUC = 0.7609 (标准差 = 0.0444)</code></pre>
 </div>
 </div>
+<p>这些 LightGBM 的日志信息和警告是模型训练过程中的正常输出，尤其是这句：</p>
+<blockquote class="blockquote">
+<p><strong>[Warning] No further splits with positive gain, best gain: -inf</strong></p>
+</blockquote>
+<p>它的意思是：在某一轮训练中，LightGBM 没有找到任何可以继续分裂的节点（即没有“正增益”的分裂点），所以该轮的树构建就提前终止了。这通常是因为：</p>
+<ul>
+<li><p>数据已经被很好地拟合；</p></li>
+<li><p>当前参数限制了树的复杂度（如 <code>max_depth</code>、<code>min_data_in_leaf</code> 等）；</p></li>
+<li><p>或者数据本身不支持进一步分裂（例如样本太少或特征太弱）。</p></li>
+</ul>
+<p>这不是错误，也不会影响模型的正常训练和预测性能。</p>
 </section>
 </section>
 <section id="可视化结果" class="level4">
-<h4 class="anchored" data-anchor-id="可视化结果">可视化结果</h4>
+<h4 class="anchored" data-anchor-id="可视化结果">可视化结果🤨</h4>
 <p>. 比较平均 AUC 分数： 查看打印的输出和条形图。您将看到五个模型的平均 AUC 分数。 与原始论文一致，您可能会发现所有高级模型（RF，GBM，XGB，LGBM）的表现非常相似，并且明显优于基线 Logistic 回归模型 。</p>
 <p>随机森林模型可能仍然略占优势，就像论文中提到的那样，AUC 得分在 0.79-0.80 左右 。这证实了我们之前的发现，但现在的置信度更高了。顶级模型之间性能接近，这是机器学习中一个非常常见且重要的发现。</p>
 <p>标准差（误差线）的重要性： 标准差（由条形图上的黑色“误差线”表示）告诉您模型的性能在 5 个不同折叠之间的差异有多大。 标准差越小（误差线越短），效果越好。 这意味着模型稳定，其性能不会严重依赖于训练时所用的特定数据子集。</p>
 <p>您可能会注意到基于树的模型具有相对较低的方差，这表明它们很稳定。</p>
-<div id="b62e1c13" class="cell" data-execution_count="9">
+<div id="2c5c59e9" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 将结果字典转换为 DataFrame，方便绘图</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>results_df <span class="op">=</span> pd.DataFrame(results).T.sort_values(by<span class="op">=</span><span class="st">'mean_auc'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -844,163 +859,945 @@ Parameters: { "use_label_encoder" } are not used.
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    yval <span class="op">=</span> bar.get_height()</span>
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    plt.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="fl">2.0</span>, yval <span class="op">+</span> <span class="fl">0.01</span>, <span class="ss">f'</span><span class="sc">{</span>yval<span class="sc">:.3f}</span><span class="ss">'</span>, ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>)</span>
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Mean AUC Score (平均AUC分数)'</span>)</span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Machine Learning Models (机器学习模型)'</span>)</span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Comparison of ML Models using 5-Fold Cross-Validation (使用5折交叉验证比较模型性能)'</span>)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Mean AUC Score '</span>)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Machine Learning Models '</span>)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Comparison of ML Models using 5-Fold Cross-Validation '</span>)</span>
 <span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>, <span class="fl">1.0</span>) <span class="co"># 设置y轴范围为0到1</span></span>
 <span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">15</span>) <span class="co"># 旋转x轴标签，防止重叠</span></span>
 <span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">'y'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
 <span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-10-output-1.png" width="961" height="640" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>🎯 模型表现排名（按 AUC）</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>模型名称</th>
+<th>平均 AUC 分数</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🥇 <strong>Random Forest (RF)</strong></td>
+<td><strong>0.798</strong></td>
+</tr>
+<tr class="even">
+<td>🥈 Logistic Regression (LR)</td>
+<td>0.792</td>
+</tr>
+<tr class="odd">
+<td>🥉 LightGBM (LGBM)</td>
+<td>0.760</td>
+</tr>
+<tr class="even">
+<td>XGBoost (XGB)</td>
+<td>0.758</td>
+</tr>
+<tr class="odd">
+<td>Gradient Boosting (GBM)</td>
+<td>0.757</td>
+</tr>
+</tbody>
+</table>
+<p><strong>📌 评估</strong></p>
+<blockquote class="blockquote">
+<p>在这次评估中，<strong>Random Forest</strong> 不仅在平均 AUC 上领先，而且其稳定性也很高（标准差较小）。这说明它在不同数据划分下都能保持良好的预测能力，是一个非常可靠的模型选择。</p>
+</blockquote>
+<ul>
+<li><p>虽然逻辑回归易于解释，但在复杂数据中，集成树模型（如 RF）往往能捕捉更丰富的非线性关系；</p></li>
+<li><p>RF 的优势在于“稳健性”和“泛化能力”，尤其适合临床数据这种变量多、结构复杂的场景；</p></li>
+<li><p>这也验证了原始论文的结论：RF 是预测主观幸福感的首选模型之一。</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="改进模型" class="level2">
+<h2 class="anchored" data-anchor-id="改进模型">改进模型🤖🤖</h2>
+<p>虽然我们的模型AUC有0.8左右，这样的数据已经不错了，如果比较原来的论文<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12236327/#s5">原论文链接</a></p>
+<p><code>The random forest (RF) model had the highest area under the curve (AUC) of 0.794 at baseline. Obsessive-compulsive symptoms (OCS) had the most significant impact on high levels of SWB, followed by somatization, cognitive deficits, and depression. The network analysis demonstrated robust connections among the SWB, OCS, and somatization. SEM analysis revealed that OCS exerted the strongest direct effect on SWB, and also an indirect effect via the mediation of depression. Furthermore, the contribution of OCS at baseline to SWB was maintained 6 months later.随机森林 (RF) 模型的基线曲线下面积 (AUC) 最高，为 0.794。强迫症状 (OCS) 对高水平主观幸福感 (SWB) 的影响最为显著，其次是躯体化、认知缺陷和抑郁症。网络分析表明，SWB、OCS 和躯体化之间存在稳态联系。结构方程模型 (SEM) 分析显示，OCS 对 SWB 的直接影响最为显著，并且也通过抑郁症的中介产生间接影响。此外，基线 OCS 对 SWB 的贡献在 6 个月后得以维持。</code></p>
+<p>看起来确实已经不错了，但是我们还是可以对原来的模型进行改善，这是原论文没有进行的操作，具体有两种方法，在模型不改变的情况下</p>
+<p><strong>特征选择（Feature Selection）</strong> 和 <strong>超参数调整（Hyperparameter Tuning）</strong></p>
+<section id="为什么要进行特征选择" class="level4">
+<h4 class="anchored" data-anchor-id="为什么要进行特征选择">🧠 为什么要进行特征选择？</h4>
+<blockquote class="blockquote">
+<p><strong>理念：少即是多（Less is More）</strong></p>
+</blockquote>
+<p>在机器学习中，使用所有变量并不总是最好的选择。有些变量可能：</p>
+<ul>
+<li><p>与目标无关（噪声）；</p></li>
+<li><p>与其他变量高度冗余（重复信息）；</p></li>
+<li><p>增加模型复杂度，导致过拟合；</p></li>
+<li><p>降低模型解释性，让临床人员难以理解。</p></li>
+</ul>
+</section>
+<section id="特征选择的好处" class="level3">
+<h3 class="anchored" data-anchor-id="特征选择的好处">✅ 特征选择的好处：</h3>
+<ul>
+<li><p><strong>提升模型性能</strong>：去除无关变量后，模型更专注于有效信息；</p></li>
+<li><p><strong>提高训练速度</strong>：变量少，计算更快；</p></li>
+<li><p><strong>增强解释性</strong>：更容易向临床人员解释模型决策；</p></li>
+<li><p><strong>减少过拟合风险</strong>：模型更稳健，泛化能力更强。</p></li>
+</ul>
+<section id="为什么要进行超参数调整" class="level4">
+<h4 class="anchored" data-anchor-id="为什么要进行超参数调整">🔧 为什么要进行超参数调整？</h4>
+<blockquote class="blockquote">
+<p><strong>理念：模型的“个性化设置”决定它的表现</strong></p>
+</blockquote>
+<p>每个机器学习模型都有一些“内部设置”，称为<strong>超参数</strong>（hyperparameters），它们不是从数据中学出来的，而是你提前设定的。</p>
+<p>例如：</p>
+<ul>
+<li><p>随机森林的 <code>n_estimators</code>（树的数量）、<code>max_depth</code>（树的最大深度）；</p></li>
+<li><p>XGBoost 的 <code>learning_rate</code>（学习率）、<code>subsample</code>（样本采样比例）；</p></li>
+<li><p>LightGBM 的 <code>num_leaves</code>（叶子数）、<code>min_data_in_leaf</code>（每个叶子最少样本数）。</p></li>
+</ul>
+</section>
+</section>
+<section id="超参数调整的好处" class="level3">
+<h3 class="anchored" data-anchor-id="超参数调整的好处">✅ 超参数调整的好处：</h3>
+<ul>
+<li><p><strong>提升模型性能</strong>：找到最适合当前数据的参数组合；</p></li>
+<li><p><strong>控制模型复杂度</strong>：防止过拟合或欠拟合；</p></li>
+<li><p><strong>增强模型稳定性</strong>：提高在不同数据划分下的表现一致性。</p></li>
+</ul>
+</section>
+<section id="特征选择" class="level3">
+<h3 class="anchored" data-anchor-id="特征选择">特征选择🤩</h3>
+<div id="47fdf8bb" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入所需的库</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 2. 识别最重要的特征 ---</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify the most important features</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">#和以前一样导入数据</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 1. 加载并准备数据 (与之前相同) ---</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Load and Prepare the Data</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="co"># !!! 重要提示: 请将下面的路径修改为您保存 CSV 文件的实际位置 !!!</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"./synthetic_schizophrenia_data.csv"</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'High_SWB'</span>] <span class="op">=</span> (df[<span class="st">'SWN_Total_Score'</span>] <span class="op">&gt;=</span> <span class="dv">80</span>).astype(<span class="bu">int</span>)</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop([<span class="st">'SWN_Total_Score'</span>, <span class="st">'High_SWB'</span>], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">'High_SWB'</span>]</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> pd.get_dummies(X, columns<span class="op">=</span>[<span class="st">'Education'</span>], drop_first<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"--- 方法一: 特征选择 ---"</span>)</span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"首先，我们训练一个基础模型来获取特征重要性..."</span>)</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 训练一个临时的随机森林模型来获取特征重要性排序</span></span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>temp_rf <span class="op">=</span> RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">500</span>, max_depth<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>temp_rf.fit(X, y)</span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a><span class="co"># 创建一个包含特征名称和其重要性分数的 DataFrame</span></span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>feature_importances <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">'feature'</span>: X.columns,</span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">'importance'</span>: temp_rf.feature_importances_</span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a>}).sort_values(<span class="st">'importance'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a><span class="co"># 打印最重要的特征</span></span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">根据基础模型得出的特征重要性排序:"</span>)</span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(feature_importances)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>--- 方法一: 特征选择 ---
+首先，我们训练一个基础模型来获取特征重要性...
+
+根据基础模型得出的特征重要性排序:
+                         feature  importance
+12                    SCL90R_OCS    0.303654
+9                 CGI_Depressive    0.153773
+11           SCL90R_Somatization    0.127664
+14               PSP_Total_Score    0.098338
+8                   CGI_Negative    0.057625
+3            Duration_of_Illness    0.050011
+7                   CGI_Positive    0.049062
+10                 CGI_Cognitive    0.048823
+0                            Age    0.040797
+13       DIEPSS_Overall_Severity    0.026666
+4                        Obesity    0.009579
+6                       Diabetes    0.007630
+2            Occupation_Employed    0.006329
+15         Education_High school    0.006138
+5                   Hypertension    0.004924
+1                     Sex_Female    0.004714
+16  Education_Less than 12 years    0.004275</code></pre>
+</div>
+</div>
+<section id="删除建议按重要性断层" class="level4">
+<h4 class="anchored" data-anchor-id="删除建议按重要性断层">📊 删除建议（按重要性断层）</h4>
+<p>我打算删除的变量，其重要性如下：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>特征名称</th>
+<th>重要性</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DIEPSS_Overall_Severity</td>
+<td>0.0267</td>
+</tr>
+<tr class="even">
+<td>Obesity</td>
+<td>0.0096</td>
+</tr>
+<tr class="odd">
+<td>Diabetes</td>
+<td>0.0076</td>
+</tr>
+<tr class="even">
+<td>Occupation_Employed</td>
+<td>0.0063</td>
+</tr>
+<tr class="odd">
+<td>Education_High school</td>
+<td>0.0061</td>
+</tr>
+<tr class="even">
+<td>Hypertension</td>
+<td>0.0049</td>
+</tr>
+<tr class="odd">
+<td>Sex_Female</td>
+<td>0.0047</td>
+</tr>
+<tr class="even">
+<td>Education_Less than 12 years</td>
+<td>0.0043</td>
+</tr>
+</tbody>
+</table>
+<p>这些变量都和 <code>Age</code> 的重要性（0.0408）断层，说明它们可能对模型预测贡献非常有限。</p>
+<p>但是考虑到<code>DIEPSS_Oerall_Severity</code>对于实际意义的确有影响，且和其后面的也断层了，所以我打算保留</p>
+<p><strong><em>特征选择不仅是“数学问题”，也是“领域知识问题”。</em></strong></p>
+<p>所以我们已经选出了<strong><em>10个贡献比较大的特征</em></strong></p>
+<div id="750d8994" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 选择最重要的前 10 个特征</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>N_TOP_FEATURES <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>top_features <span class="op">=</span> feature_importances[<span class="st">'feature'</span>].head(N_TOP_FEATURES).tolist()</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">我们将选择最重要的 </span><span class="sc">{</span>N_TOP_FEATURES<span class="sc">}</span><span class="ss"> 个特征进行建模: </span><span class="sc">{</span>top_features<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 创建只包含最重要特征的新数据集</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>X_selected <span class="op">=</span> X[top_features]</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 3. 在筛选后的特征上重新评估模型 ---</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-evaluate the model on selected features</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">使用筛选出的特征进行5折交叉验证..."</span>)</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用与之前相同的模型配置</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>model_on_selected_features <span class="op">=</span> RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">500</span>, max_depth<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>cv_scores_selected <span class="op">=</span> cross_val_score(model_on_selected_features, X_selected, y, cv<span class="op">=</span><span class="dv">5</span>, scoring<span class="op">=</span><span class="st">'roc_auc'</span>)</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 打印结果</span></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>mean_auc_selected <span class="op">=</span> np.mean(cv_scores_selected)</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">使用最重要的 </span><span class="sc">{</span>N_TOP_FEATURES<span class="sc">}</span><span class="ss"> 个特征, 模型的平均 AUC 分数是: </span><span class="sc">{</span>mean_auc_selected<span class="sc">:.4f}</span><span class="ss">"</span>)</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"原始模型的平均 AUC 分数是: 0.7980 (作为对比)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+我们将选择最重要的 10 个特征进行建模: ['SCL90R_OCS', 'CGI_Depressive', 'SCL90R_Somatization', 'PSP_Total_Score', 'CGI_Negative', 'Duration_of_Illness', 'CGI_Positive', 'CGI_Cognitive', 'Age', 'DIEPSS_Overall_Severity']
+
+使用筛选出的特征进行5折交叉验证...
+
+使用最重要的 10 个特征, 模型的平均 AUC 分数是: 0.7991
+原始模型的平均 AUC 分数是: 0.7980 (作为对比)</code></pre>
+</div>
+</div>
+<p>为了加以区别，我们分别复制代码，选取9个和11个特征进行训练看看有什么区别，即剔除<code>DIEPSS_Overall_Severity 0.026666</code> 和加上不太重要的<code>Obesity 0.009579</code>的变量</p>
+<div id="3af3dcea" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 选择最重要的前 9 个特征</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co">#剔除DIEPSS_Overall_Severity 0.026666</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>N_TOP_FEATURES <span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>top_features <span class="op">=</span> feature_importances[<span class="st">'feature'</span>].head(N_TOP_FEATURES).tolist()</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">我们将选择最重要的 </span><span class="sc">{</span>N_TOP_FEATURES<span class="sc">}</span><span class="ss"> 个特征进行建模: </span><span class="sc">{</span>top_features<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 创建只包含最重要特征的新数据集</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>X_selected <span class="op">=</span> X[top_features]</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 3. 在筛选后的特征上重新评估模型 ---</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-evaluate the model on selected features</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">使用筛选出的特征进行5折交叉验证..."</span>)</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用与之前相同的模型配置</span></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>model_on_selected_features <span class="op">=</span> RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">500</span>, max_depth<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>cv_scores_selected <span class="op">=</span> cross_val_score(model_on_selected_features, X_selected, y, cv<span class="op">=</span><span class="dv">5</span>, scoring<span class="op">=</span><span class="st">'roc_auc'</span> )</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 打印结果</span></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>mean_auc_selected <span class="op">=</span> np.mean(cv_scores_selected)</span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">使用最重要的 </span><span class="sc">{</span>N_TOP_FEATURES<span class="sc">}</span><span class="ss"> 个特征, 模型的平均 AUC 分数是: </span><span class="sc">{</span>mean_auc_selected<span class="sc">:.4f}</span><span class="ss">"</span>)</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"原始模型的平均 AUC 分数是: 0.7980 (作为对比)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+我们将选择最重要的 9 个特征进行建模: ['SCL90R_OCS', 'CGI_Depressive', 'SCL90R_Somatization', 'PSP_Total_Score', 'CGI_Negative', 'Duration_of_Illness', 'CGI_Positive', 'CGI_Cognitive', 'Age']
+
+使用筛选出的特征进行5折交叉验证...
+
+使用最重要的 9 个特征, 模型的平均 AUC 分数是: 0.7975
+原始模型的平均 AUC 分数是: 0.7980 (作为对比)</code></pre>
+</div>
+</div>
+<div id="ec1bed1e" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 选择最重要的前 11 个特征</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 加上不太重要的Obesity 0.009579的变量</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>N_TOP_FEATURES <span class="op">=</span> <span class="dv">11</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>top_features <span class="op">=</span> feature_importances[<span class="st">'feature'</span>].head(N_TOP_FEATURES).tolist()</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">我们将选择最重要的 </span><span class="sc">{</span>N_TOP_FEATURES<span class="sc">}</span><span class="ss"> 个特征进行建模: </span><span class="sc">{</span>top_features<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 创建只包含最重要特征的新数据集</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>X_selected <span class="op">=</span> X[top_features]</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 3. 在筛选后的特征上重新评估模型 ---</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-evaluate the model on selected features</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">使用筛选出的特征进行5折交叉验证..."</span>)</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用与之前相同的模型配置</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>model_on_selected_features <span class="op">=</span> RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">500</span>, max_depth<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>cv_scores_selected <span class="op">=</span> cross_val_score(model_on_selected_features, X_selected, y, cv<span class="op">=</span><span class="dv">5</span>, scoring<span class="op">=</span><span class="st">'roc_auc'</span>)</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 打印结果</span></span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>mean_auc_selected <span class="op">=</span> np.mean(cv_scores_selected)</span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">使用最重要的 </span><span class="sc">{</span>N_TOP_FEATURES<span class="sc">}</span><span class="ss"> 个特征, 模型的平均 AUC 分数是: </span><span class="sc">{</span>mean_auc_selected<span class="sc">:.4f}</span><span class="ss">"</span>)</span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"原始模型的平均 AUC 分数是: 0.7980 (作为对比)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+我们将选择最重要的 11 个特征进行建模: ['SCL90R_OCS', 'CGI_Depressive', 'SCL90R_Somatization', 'PSP_Total_Score', 'CGI_Negative', 'Duration_of_Illness', 'CGI_Positive', 'CGI_Cognitive', 'Age', 'DIEPSS_Overall_Severity', 'Obesity']
+
+使用筛选出的特征进行5折交叉验证...
+
+使用最重要的 11 个特征, 模型的平均 AUC 分数是: 0.7974
+原始模型的平均 AUC 分数是: 0.7980 (作为对比)</code></pre>
+</div>
+</div>
+</section>
+<section id="教学总结特征选择的实证价值" class="level4">
+<h4 class="anchored" data-anchor-id="教学总结特征选择的实证价值">🎯 教学总结：特征选择的实证价值</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>特征数量</th>
+<th>平均 AUC 分数</th>
+<th>相对表现</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>原始模型（全部特征）</td>
+<td>0.7980</td>
+<td>基准</td>
+</tr>
+<tr class="even">
+<td>最重要的 10 个特征</td>
+<td><strong>0.7991</strong></td>
+<td>✅ 最佳表现</td>
+</tr>
+<tr class="odd">
+<td>最重要的 9 个特征（剔除 DIEPSS）</td>
+<td>0.7975</td>
+<td>略低</td>
+</tr>
+<tr class="even">
+<td>最重要的 11 个特征（加入 Obesity）</td>
+<td>0.7974</td>
+<td>略低</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="要点一不是特征越多越好" class="level4">
+<h4 class="anchored" data-anchor-id="要点一不是特征越多越好">🧠 要点一：不是特征越多越好</h4>
+<blockquote class="blockquote">
+<p>增加变量并不一定提升模型性能，反而可能引入噪声或冗余信息。</p>
+</blockquote>
+<ul>
+<li><p>加入 <strong>Obesity（0.009579）</strong> 后，模型性能略微下降；</p></li>
+<li><p>删除 <strong>DIEPSS（0.026666）</strong> 后，模型也略微下降；</p></li>
+<li><p>说明这两个变量虽然贡献不大，但也不是完全无效，尤其 DIEPSS 可能有一定临床解释价值。</p></li>
+</ul>
+</section>
+<section id="要点二找到最佳变量组合才是关键" class="level4">
+<h4 class="anchored" data-anchor-id="要点二找到最佳变量组合才是关键">🧠 要点二：找到“最佳变量组合”才是关键</h4>
+<blockquote class="blockquote">
+<p>10个变量组合的模型表现最好，说明它在信息量与简洁性之间达到了平衡。</p>
+</blockquote>
+<ul>
+<li><p>这个组合既保留了高贡献变量，又避免了低贡献变量的干扰；</p></li>
+<li><p>模型更快、更稳定、更易解释；。</p></li>
+</ul>
+</section>
+<section id="要点三进行变量敏感性分析" class="level4">
+<h4 class="anchored" data-anchor-id="要点三进行变量敏感性分析">🧠 要点三：进行“变量敏感性分析”</h4>
+<ul>
+<li><p>逐个添加或剔除变量，观察模型性能变化；</p></li>
+<li><p>结合领域知识判断是否保留某些临床重要但模型贡献较低的变量；</p></li>
+<li><p>用图表展示 AUC 随变量数量变化的趋势，强化“变量选择是策略性决策”的理念。</p></li>
+</ul>
+</section>
+</section>
+<section id="超参数调优" class="level3">
+<h3 class="anchored" data-anchor-id="超参数调优">超参数调优🎃</h3>
+<p>例如，假设 n_estimators=500，max_depth=5，但这些设置可能并非我们特定“赛道”（数据集）的最佳设置。通过系统地尝试这些设置的不同组合，我们可以找到能够实现最佳性能的配置 #### 先是网格搜索</p>
+<p>手动定义一个固定的 param_grid 然后进行“暴力”搜索（Brute-force Search），是超参数调优最基础的方法</p>
+<div id="52f23765" class="cell" data-execution_count="14">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入 GridSearchCV</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n\n</span><span class="st">--- 方法二: 超参数调优 (这可能需要几分钟) ---"</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 1. 定义要搜索的超参数网格 ---</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the parameter grid to search</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 这是一个我们要测试的超参数组合的 "菜单"</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'n_estimators'</span>: [<span class="dv">200</span>, <span class="dv">400</span>, <span class="dv">600</span>],       <span class="co"># 树的数量</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'max_depth'</span>: [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>],             <span class="co"># 树的最大深度</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'min_samples_leaf'</span>: [<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>],         <span class="co"># 一个叶节点上最少的样本数</span></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'max_features'</span>: [<span class="st">'sqrt'</span>, <span class="st">'log2'</span>]       <span class="co"># 每次分裂时考虑的最大特征数</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 2. 设置并运行 GridSearchCV ---</span></span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Setup and run GridSearchCV</span></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 初始化我们的基础模型</span></span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>rf_base <span class="op">=</span> RandomForestClassifier(random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a><span class="co"># 设置 GridSearchCV</span></span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a><span class="co"># estimator: 我们要调优的模型</span></span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a><span class="co"># param_grid: 我们定义的参数网格</span></span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a><span class="co"># cv=5: 使用5折交叉验证来评估每一种参数组合</span></span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a><span class="co"># scoring='roc_auc': 我们的评估指标</span></span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>grid_search <span class="op">=</span> GridSearchCV(estimator<span class="op">=</span>rf_base, param_grid<span class="op">=</span>param_grid, cv<span class="op">=</span><span class="dv">5</span>, scoring<span class="op">=</span><span class="st">'roc_auc'</span> , verbose<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a><span class="co"># 在完整数据集上运行网格搜索</span></span>
+<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a>grid_search.fit(X, y)</span>
+<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-34"><a href="#cb22-34" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 3. 打印最佳结果 ---</span></span>
+<span id="cb22-35"><a href="#cb22-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the best results</span></span>
+<span id="cb22-36"><a href="#cb22-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-37"><a href="#cb22-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">超参数调优完成!"</span>)</span>
+<span id="cb22-38"><a href="#cb22-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-39"><a href="#cb22-39" aria-hidden="true" tabindex="-1"></a><span class="co"># 打印找到的最佳参数组合</span></span>
+<span id="cb22-40"><a href="#cb22-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"找到的最佳超参数组合 (Best Parameters): </span><span class="ch">\n</span><span class="sc">{</span>grid_search<span class="sc">.</span>best_params_<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb22-41"><a href="#cb22-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-42"><a href="#cb22-42" aria-hidden="true" tabindex="-1"></a><span class="co"># 打印使用最佳参数时，交叉验证得到的最佳AUC分数</span></span>
+<span id="cb22-43"><a href="#cb22-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">使用最佳参数时，模型的最佳平均 AUC 分数是: </span><span class="sc">{</span>grid_search<span class="sc">.</span>best_score_<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+
+--- 方法二: 超参数调优 (这可能需要几分钟) ---
+Fitting 5 folds for each of 72 candidates, totalling 360 fits
+
+超参数调优完成!
+找到的最佳超参数组合 (Best Parameters): 
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 3, 'n_estimators': 200}
+
+使用最佳参数时，模型的最佳平均 AUC 分数是: 0.7997</code></pre>
+</div>
 <div class="cell-output cell-output-stderr">
-<pre><code>d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+<pre><code>d:\pythontext\.venv\Lib\site-packages\numpy\ma\core.py:2846: RuntimeWarning:
 
-Glyph 26426 (\N{CJK UNIFIED IDEOGRAPH-673A}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 22120 (\N{CJK UNIFIED IDEOGRAPH-5668}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 23398 (\N{CJK UNIFIED IDEOGRAPH-5B66}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 20064 (\N{CJK UNIFIED IDEOGRAPH-4E60}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 27169 (\N{CJK UNIFIED IDEOGRAPH-6A21}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 22411 (\N{CJK UNIFIED IDEOGRAPH-578B}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 24179 (\N{CJK UNIFIED IDEOGRAPH-5E73}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 22343 (\N{CJK UNIFIED IDEOGRAPH-5747}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 20351 (\N{CJK UNIFIED IDEOGRAPH-4F7F}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 25240 (\N{CJK UNIFIED IDEOGRAPH-6298}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 20132 (\N{CJK UNIFIED IDEOGRAPH-4EA4}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 21449 (\N{CJK UNIFIED IDEOGRAPH-53C9}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 39564 (\N{CJK UNIFIED IDEOGRAPH-9A8C}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 35777 (\N{CJK UNIFIED IDEOGRAPH-8BC1}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 27604 (\N{CJK UNIFIED IDEOGRAPH-6BD4}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 36739 (\N{CJK UNIFIED IDEOGRAPH-8F83}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 24615 (\N{CJK UNIFIED IDEOGRAPH-6027}) missing from font(s) Arial.
-
-d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
-
-Glyph 33021 (\N{CJK UNIFIED IDEOGRAPH-80FD}) missing from font(s) Arial.
+invalid value encountered in cast
 </code></pre>
 </div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-10-output-2.png" width="965" height="645" class="figure-img"></p>
-</figure>
+</div>
+<p>使用最佳参数时，模型的最佳平均 AUC 分数是: 0.7997 正如我说，网格搜索是超参数最基础的方法，但它有两个主要缺点：</p>
+<ol type="1">
+<li><p><strong>维度诅咒 (Curse of Dimensionality):</strong> 当参数和你想尝试的值变多时，组合的数量会呈指数级增长，导致计算成本极高，非常耗时。</p></li>
+<li><p><strong>效率低下:</strong> 它会花费大量时间去尝试那些明显不佳的参数组合。</p></li>
+</ol>
+<p>接下来我会用一个更加爽的方法，<strong><em>即贝叶斯优化</em></strong></p>
+<p>这是目前最先进和最高效的调优方法之一，它完美地体现了“迭代选择最好”的思想。</p>
+<p><strong>核心思想：</strong><br>
+贝叶斯优化会建立一个关于“哪个参数组合可能得到更高分数”的概率模型。</p>
+<ol type="1">
+<li><p>它首先尝试几个随机的参数组合。</p></li>
+<li><p>然后，它根据已有的结果，更新内部的概率模型，预测出“最有希望”提升分数的下一个参数组合。</p></li>
+<li><p>它会去尝试这个“最有希望”的组合，然后再次更新模型。</p></li>
+<li><p>这个过程会不断迭代，智能地将搜索资源集中在参数空间中最有潜力的区域。</p></li>
+</ol>
+<p><strong>打个比方：</strong> 这就像在一个大雾弥漫的山区里找最高峰。你不会在地毯式搜索每一寸土地（网格搜索），而是根据你当前所在位置的高度和坡度，来判断下一步往哪个方向走最有可能登得更高。</p>
+<p><strong>🥸不过需要注意的是，由于是随机组合，每次远行代码得到的最好的结果都不一样，就好像在乌泱泱的大海找最大的船，有的时候你不一定能找到山东舰航母，可能只会找到护卫舰</strong></p>
+<div id="a66050be" class="cell" data-execution_count="15">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入 optuna 库</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> optuna</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n\n</span><span class="st">--- 最智能的调优方法二: 贝叶斯优化 (Bayesian Optimization with Optuna) ---"</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Optuna 会根据历史结果，智能地选择下一次要尝试的超参数..."</span>)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 1. 定义一个 "目标函数" (Objective Function) ---</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 这个函数告诉 Optuna 如何评估一组超参数的好坏</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> objective(trial):</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 'trial' 对象用于建议超参数的值</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Optuna 会智能地决定建议值的范围和具体值</span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">'n_estimators'</span>: trial.suggest_int(<span class="st">'n_estimators'</span>, <span class="dv">200</span>, <span class="dv">800</span>), <span class="co"># 建议一个在 [200, 800] 范围内的整数</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">'max_depth'</span>: trial.suggest_int(<span class="st">'max_depth'</span>, <span class="dv">3</span>, <span class="dv">10</span>),</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">'min_samples_leaf'</span>: trial.suggest_int(<span class="st">'min_samples_leaf'</span>, <span class="dv">1</span>, <span class="dv">10</span>),</span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">'max_features'</span>: trial.suggest_categorical(<span class="st">'max_features'</span>, [<span class="st">'sqrt'</span>, <span class="st">'log2'</span>]),</span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 使用这组参数创建并评估模型</span></span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> RandomForestClassifier(random_state<span class="op">=</span><span class="dv">42</span>, <span class="op">**</span>params)</span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 使用交叉验证来获得稳健的分数</span></span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a>    score <span class="op">=</span> cross_val_score(model, X, y, cv<span class="op">=</span><span class="dv">5</span>, scoring<span class="op">=</span><span class="st">'roc_auc'</span>, ).mean()</span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Optuna 的目标是最大化这个返回值</span></span>
+<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> score</span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 2. 创建一个 "研究" (Study) 并开始优化 ---</span></span>
+<span id="cb25-30"><a href="#cb25-30" aria-hidden="true" tabindex="-1"></a><span class="co"># direction='maximize': 告诉 Optuna 我们的目标是最大化 objective 函数的返回值</span></span>
+<span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a>study <span class="op">=</span> optuna.create_study(direction<span class="op">=</span><span class="st">'maximize'</span>, study_name<span class="op">=</span><span class="st">'RF_Optimization'</span>)</span>
+<span id="cb25-32"><a href="#cb25-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-33"><a href="#cb25-33" aria-hidden="true" tabindex="-1"></a><span class="co"># n_trials=100: 运行100次迭代。Optuna 会在这100次中智能地寻找最优解。</span></span>
+<span id="cb25-34"><a href="#cb25-34" aria-hidden="true" tabindex="-1"></a>study.optimize(objective, n_trials<span class="op">=</span><span class="dv">100</span>)</span>
+<span id="cb25-35"><a href="#cb25-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-36"><a href="#cb25-36" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 3. 打印最佳结果 ---</span></span>
+<span id="cb25-37"><a href="#cb25-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">贝叶斯优化完成!"</span>)</span>
+<span id="cb25-38"><a href="#cb25-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"迭代次数 (Number of finished trials): </span><span class="sc">{</span><span class="bu">len</span>(study.trials)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-39"><a href="#cb25-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"找到的最佳超参数组合 (Best Parameters): </span><span class="ch">\n</span><span class="sc">{</span>study<span class="sc">.</span>best_params<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb25-40"><a href="#cb25-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">使用最佳参数时，模型的最佳平均 AUC 分数是: </span><span class="sc">{</span>study<span class="sc">.</span>best_value<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>[I 2025-09-12 12:06:24,092] A new study created in memory with name: RF_Optimization</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+
+--- 最智能的调优方法二: 贝叶斯优化 (Bayesian Optimization with Optuna) ---
+Optuna 会根据历史结果，智能地选择下一次要尝试的超参数...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>[I 2025-09-12 12:06:26,062] Trial 0 finished with value: 0.7975024428376002 and parameters: {'n_estimators': 662, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 0 with value: 0.7975024428376002.
+[I 2025-09-12 12:06:28,401] Trial 1 finished with value: 0.7987354124860382 and parameters: {'n_estimators': 758, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:30,359] Trial 2 finished with value: 0.7962259708194112 and parameters: {'n_estimators': 547, 'max_depth': 6, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:32,669] Trial 3 finished with value: 0.7951182333398477 and parameters: {'n_estimators': 588, 'max_depth': 9, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:34,517] Trial 4 finished with value: 0.795039522331905 and parameters: {'n_estimators': 507, 'max_depth': 10, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:35,368] Trial 5 finished with value: 0.7947395657071677 and parameters: {'n_estimators': 226, 'max_depth': 8, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:38,438] Trial 6 finished with value: 0.7902455071648625 and parameters: {'n_estimators': 786, 'max_depth': 9, 'min_samples_leaf': 3, 'max_features': 'sqrt'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:40,595] Trial 7 finished with value: 0.7979688301866407 and parameters: {'n_estimators': 642, 'max_depth': 5, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:41,723] Trial 8 finished with value: 0.7974651369339568 and parameters: {'n_estimators': 334, 'max_depth': 5, 'min_samples_leaf': 4, 'max_features': 'sqrt'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:43,010] Trial 9 finished with value: 0.796392687534458 and parameters: {'n_estimators': 358, 'max_depth': 6, 'min_samples_leaf': 4, 'max_features': 'sqrt'}. Best is trial 1 with value: 0.7987354124860382.
+[I 2025-09-12 12:06:45,395] Trial 10 finished with value: 0.7988974262421928 and parameters: {'n_estimators': 794, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 10 with value: 0.7988974262421928.
+[I 2025-09-12 12:06:47,759] Trial 11 finished with value: 0.7989554982514845 and parameters: {'n_estimators': 780, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 11 with value: 0.7989554982514845.
+[I 2025-09-12 12:06:50,104] Trial 12 finished with value: 0.7962377123282666 and parameters: {'n_estimators': 718, 'max_depth': 4, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 11 with value: 0.7989554982514845.
+[I 2025-09-12 12:06:52,505] Trial 13 finished with value: 0.7991797308827104 and parameters: {'n_estimators': 784, 'max_depth': 3, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:06:54,654] Trial 14 finished with value: 0.7985183455117725 and parameters: {'n_estimators': 676, 'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:06:56,302] Trial 15 finished with value: 0.7961692652103383 and parameters: {'n_estimators': 433, 'max_depth': 7, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:06:58,239] Trial 16 finished with value: 0.7980679736443641 and parameters: {'n_estimators': 594, 'max_depth': 4, 'min_samples_leaf': 6, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:00,746] Trial 17 finished with value: 0.7981055178736269 and parameters: {'n_estimators': 733, 'max_depth': 5, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:02,854] Trial 18 finished with value: 0.7987934368302058 and parameters: {'n_estimators': 708, 'max_depth': 3, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:04,519] Trial 19 finished with value: 0.7927481803838949 and parameters: {'n_estimators': 446, 'max_depth': 7, 'min_samples_leaf': 6, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:06,439] Trial 20 finished with value: 0.7965123746605846 and parameters: {'n_estimators': 602, 'max_depth': 4, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:08,722] Trial 21 finished with value: 0.7984538545991284 and parameters: {'n_estimators': 772, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:11,054] Trial 22 finished with value: 0.7986725898527307 and parameters: {'n_estimators': 796, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:13,320] Trial 23 finished with value: 0.7970167670017525 and parameters: {'n_estimators': 699, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:16,033] Trial 24 finished with value: 0.7969568360526286 and parameters: {'n_estimators': 796, 'max_depth': 5, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:17,950] Trial 25 finished with value: 0.797897348389157 and parameters: {'n_estimators': 647, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:20,310] Trial 26 finished with value: 0.7973571436515616 and parameters: {'n_estimators': 741, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:22,519] Trial 27 finished with value: 0.7985077797426401 and parameters: {'n_estimators': 750, 'max_depth': 3, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:24,958] Trial 28 finished with value: 0.7962730480734551 and parameters: {'n_estimators': 696, 'max_depth': 6, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:26,896] Trial 29 finished with value: 0.7975611186051278 and parameters: {'n_estimators': 663, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:29,090] Trial 30 finished with value: 0.7983943844128689 and parameters: {'n_estimators': 639, 'max_depth': 5, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:31,244] Trial 31 finished with value: 0.7985672499288995 and parameters: {'n_estimators': 730, 'max_depth': 3, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:33,451] Trial 32 finished with value: 0.7985686481058675 and parameters: {'n_estimators': 750, 'max_depth': 3, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:36,126] Trial 33 finished with value: 0.7973512808413212 and parameters: {'n_estimators': 796, 'max_depth': 4, 'min_samples_leaf': 1, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:38,171] Trial 34 finished with value: 0.7982323229915902 and parameters: {'n_estimators': 701, 'max_depth': 3, 'min_samples_leaf': 3, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:40,563] Trial 35 finished with value: 0.7973017250008342 and parameters: {'n_estimators': 758, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:42,078] Trial 36 finished with value: 0.7977246258684982 and parameters: {'n_estimators': 516, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:43,696] Trial 37 finished with value: 0.7977758023231981 and parameters: {'n_estimators': 550, 'max_depth': 3, 'min_samples_leaf': 5, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:46,833] Trial 38 finished with value: 0.7908430848232657 and parameters: {'n_estimators': 769, 'max_depth': 10, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:48,996] Trial 39 finished with value: 0.7970188166020804 and parameters: {'n_estimators': 683, 'max_depth': 4, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:50,032] Trial 40 finished with value: 0.7949377414039922 and parameters: {'n_estimators': 259, 'max_depth': 9, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:52,125] Trial 41 finished with value: 0.7978447260923656 and parameters: {'n_estimators': 714, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:54,374] Trial 42 finished with value: 0.7986793424119506 and parameters: {'n_estimators': 766, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:56,335] Trial 43 finished with value: 0.7959593162279092 and parameters: {'n_estimators': 617, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:07:59,169] Trial 44 finished with value: 0.7920274360453199 and parameters: {'n_estimators': 723, 'max_depth': 8, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:01,582] Trial 45 finished with value: 0.7984456561978167 and parameters: {'n_estimators': 800, 'max_depth': 3, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:04,281] Trial 46 finished with value: 0.798224410581022 and parameters: {'n_estimators': 770, 'max_depth': 5, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:06,043] Trial 47 finished with value: 0.797908803907269 and parameters: {'n_estimators': 557, 'max_depth': 4, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:08,444] Trial 48 finished with value: 0.7954266108031415 and parameters: {'n_estimators': 678, 'max_depth': 8, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:10,962] Trial 49 finished with value: 0.7985558897410353 and parameters: {'n_estimators': 739, 'max_depth': 5, 'min_samples_leaf': 1, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:13,510] Trial 50 finished with value: 0.7984145944254049 and parameters: {'n_estimators': 781, 'max_depth': 4, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:15,836] Trial 51 finished with value: 0.7986233200029871 and parameters: {'n_estimators': 767, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:17,925] Trial 52 finished with value: 0.7979007485013291 and parameters: {'n_estimators': 713, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:20,189] Trial 53 finished with value: 0.7986760376300264 and parameters: {'n_estimators': 774, 'max_depth': 3, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:22,379] Trial 54 finished with value: 0.7982296696330262 and parameters: {'n_estimators': 746, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:23,807] Trial 55 finished with value: 0.7959633200983173 and parameters: {'n_estimators': 448, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:26,099] Trial 56 finished with value: 0.7989554982514845 and parameters: {'n_estimators': 780, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:27,258] Trial 57 finished with value: 0.7975624214518479 and parameters: {'n_estimators': 381, 'max_depth': 3, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:29,353] Trial 58 finished with value: 0.7961802917423351 and parameters: {'n_estimators': 658, 'max_depth': 4, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:31,678] Trial 59 finished with value: 0.797187630582579 and parameters: {'n_estimators': 735, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:34,000] Trial 60 finished with value: 0.798616567443767 and parameters: {'n_estimators': 790, 'max_depth': 3, 'min_samples_leaf': 3, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:36,296] Trial 61 finished with value: 0.7987354124860382 and parameters: {'n_estimators': 758, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:38,348] Trial 62 finished with value: 0.7978979998125172 and parameters: {'n_estimators': 700, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:41,160] Trial 63 finished with value: 0.7944944398632965 and parameters: {'n_estimators': 754, 'max_depth': 7, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:43,446] Trial 64 finished with value: 0.7989554982514845 and parameters: {'n_estimators': 780, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:45,962] Trial 65 finished with value: 0.7978601854808856 and parameters: {'n_estimators': 800, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:48,085] Trial 66 finished with value: 0.7982924446012097 and parameters: {'n_estimators': 723, 'max_depth': 3, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:50,377] Trial 67 finished with value: 0.7991790317942264 and parameters: {'n_estimators': 783, 'max_depth': 3, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:52,708] Trial 68 finished with value: 0.7991797308827104 and parameters: {'n_estimators': 784, 'max_depth': 3, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:54,965] Trial 69 finished with value: 0.7989533533209088 and parameters: {'n_estimators': 779, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:57,231] Trial 70 finished with value: 0.7991207691244393 and parameters: {'n_estimators': 783, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:08:59,495] Trial 71 finished with value: 0.7988945822231333 and parameters: {'n_estimators': 781, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:01,790] Trial 72 finished with value: 0.7991228187247673 and parameters: {'n_estimators': 786, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:04,018] Trial 73 finished with value: 0.7979473649925086 and parameters: {'n_estimators': 744, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:06,283] Trial 74 finished with value: 0.7988433104381855 and parameters: {'n_estimators': 777, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:08,743] Trial 75 finished with value: 0.7968341619120706 and parameters: {'n_estimators': 728, 'max_depth': 6, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:11,133] Trial 76 finished with value: 0.7989633153318049 and parameters: {'n_estimators': 757, 'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:13,504] Trial 77 finished with value: 0.7990173358055644 and parameters: {'n_estimators': 754, 'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:16,033] Trial 78 finished with value: 0.7980208010600724 and parameters: {'n_estimators': 757, 'max_depth': 5, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:18,217] Trial 79 finished with value: 0.7984650241264969 and parameters: {'n_estimators': 692, 'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 13 with value: 0.7991797308827104.
+[I 2025-09-12 12:09:19,009] Trial 80 finished with value: 0.7998832839999301 and parameters: {'n_estimators': 249, 'max_depth': 4, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 80 with value: 0.7998832839999301.
+[I 2025-09-12 12:09:20,085] Trial 81 finished with value: 0.7987002832897196 and parameters: {'n_estimators': 340, 'max_depth': 4, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 80 with value: 0.7998832839999301.
+[I 2025-09-12 12:09:20,780] Trial 82 finished with value: 0.7999420074325816 and parameters: {'n_estimators': 217, 'max_depth': 4, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 82 with value: 0.7999420074325816.
+[I 2025-09-12 12:09:21,444] Trial 83 finished with value: 0.79937963841237 and parameters: {'n_estimators': 205, 'max_depth': 4, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 82 with value: 0.7999420074325816.
+[I 2025-09-12 12:09:22,218] Trial 84 finished with value: 0.8005951467370839 and parameters: {'n_estimators': 230, 'max_depth': 5, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 84 with value: 0.8005951467370839.
+[I 2025-09-12 12:09:22,923] Trial 85 finished with value: 0.8010832852710001 and parameters: {'n_estimators': 209, 'max_depth': 5, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 85 with value: 0.8010832852710001.
+[I 2025-09-12 12:09:23,606] Trial 86 finished with value: 0.8007435600445509 and parameters: {'n_estimators': 205, 'max_depth': 5, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 85 with value: 0.8010832852710001.
+[I 2025-09-12 12:09:24,289] Trial 87 finished with value: 0.8028189630928946 and parameters: {'n_estimators': 203, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 87 with value: 0.8028189630928946.
+[I 2025-09-12 12:09:25,005] Trial 88 finished with value: 0.8034329375539212 and parameters: {'n_estimators': 212, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 88 with value: 0.8034329375539212.
+[I 2025-09-12 12:09:25,691] Trial 89 finished with value: 0.8029850283845812 and parameters: {'n_estimators': 200, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 88 with value: 0.8034329375539212.
+[I 2025-09-12 12:09:26,379] Trial 90 finished with value: 0.8031572424772518 and parameters: {'n_estimators': 202, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 88 with value: 0.8034329375539212.
+[I 2025-09-12 12:09:27,084] Trial 91 finished with value: 0.8037109999984111 and parameters: {'n_estimators': 209, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.
+[I 2025-09-12 12:09:27,963] Trial 92 finished with value: 0.7980920445319364 and parameters: {'n_estimators': 254, 'max_depth': 6, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.
+[I 2025-09-12 12:09:28,780] Trial 93 finished with value: 0.8030499482833406 and parameters: {'n_estimators': 244, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.
+[I 2025-09-12 12:09:29,726] Trial 94 finished with value: 0.8021223373070159 and parameters: {'n_estimators': 281, 'max_depth': 5, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.
+[I 2025-09-12 12:09:30,681] Trial 95 finished with value: 0.8022945037345626 and parameters: {'n_estimators': 284, 'max_depth': 5, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.
+[I 2025-09-12 12:09:31,655] Trial 96 finished with value: 0.8024038951939255 and parameters: {'n_estimators': 287, 'max_depth': 5, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.
+[I 2025-09-12 12:09:32,636] Trial 97 finished with value: 0.8022310773430188 and parameters: {'n_estimators': 291, 'max_depth': 5, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.
+[I 2025-09-12 12:09:33,649] Trial 98 finished with value: 0.7965552573837249 and parameters: {'n_estimators': 291, 'max_depth': 6, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.
+[I 2025-09-12 12:09:34,614] Trial 99 finished with value: 0.802574059686268 and parameters: {'n_estimators': 286, 'max_depth': 5, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 91 with value: 0.8037109999984111.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+贝叶斯优化完成!
+迭代次数 (Number of finished trials): 100
+找到的最佳超参数组合 (Best Parameters): 
+{'n_estimators': 209, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}
+
+使用最佳参数时，模型的最佳平均 AUC 分数是: 0.8037</code></pre>
 </div>
 </div>
+<p>使用最佳参数时，模型的最佳平均 AUC 分数是: 0.8042(差不多远行了好几次的最好数据),这是迭代只有100次，但是也可以多迭代，设置到200，500等等，只要你的计算机能抗住。</p>
+</section>
+<section id="最终优化结合特征选择与贝叶斯调优" class="level3">
+<h3 class="anchored" data-anchor-id="最终优化结合特征选择与贝叶斯调优">最终优化：结合特征选择与贝叶斯调优🤤</h3>
+<p><strong>目标</strong>： 在我们已经验证过的“最佳特征集”（最重要的10个特征）上，使用贝叶斯优化（Optuna）来寻找最优的超参数组合，从而获得理论上性能最好的模型</p>
+<div id="820c1fb2" class="cell" data-execution_count="16">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入所有需要的库</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> optuna</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 1. 最终步骤一：确定并筛选出最佳特征集 (Top 10) ---</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="co"># The first step of our final process: identify and select the best feature set.</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="co"># !!! 重要提示: 请将下面的路径修改为您保存 CSV 文件的实际位置 !!!</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"./synthetic_schizophrenia_data.csv"</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'High_SWB'</span>] <span class="op">=</span> (df[<span class="st">'SWN_Total_Score'</span>] <span class="op">&gt;=</span> <span class="dv">80</span>).astype(<span class="bu">int</span>)</span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop([<span class="st">'SWN_Total_Score'</span>, <span class="st">'High_SWB'</span>], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">'High_SWB'</span>]</span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> pd.get_dummies(X, columns<span class="op">=</span>[<span class="st">'Education'</span>], drop_first<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 训练一个临时模型来获取特征重要性</span></span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>temp_rf <span class="op">=</span> RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">500</span>, max_depth<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>, )</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a>temp_rf.fit(X, y)</span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 获取最重要的10个特征的名称</span></span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a>N_TOP_FEATURES <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a>feature_importances <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">'feature'</span>: X.columns,</span>
+<span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">'importance'</span>: temp_rf.feature_importances_</span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>}).sort_values(<span class="st">'importance'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a>top_10_features <span class="op">=</span> feature_importances[<span class="st">'feature'</span>].head(N_TOP_FEATURES).tolist()</span>
+<span id="cb30-32"><a href="#cb30-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-33"><a href="#cb30-33" aria-hidden="true" tabindex="-1"></a><span class="co"># 创建只包含这10个特征的新数据集</span></span>
+<span id="cb30-34"><a href="#cb30-34" aria-hidden="true" tabindex="-1"></a>X_top10 <span class="op">=</span> X[top_10_features]</span>
+<span id="cb30-35"><a href="#cb30-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-36"><a href="#cb30-36" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"--- 最终优化流程 ---"</span>)</span>
+<span id="cb30-37"><a href="#cb30-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"已成功筛选出最重要的 </span><span class="sc">{</span>N_TOP_FEATURES<span class="sc">}</span><span class="ss"> 个特征用于最终调优:"</span>)</span>
+<span id="cb30-38"><a href="#cb30-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(top_10_features)</span>
+<span id="cb30-39"><a href="#cb30-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-40"><a href="#cb30-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-41"><a href="#cb30-41" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 2. 最终步骤二：在最佳特征集上进行贝叶斯优化 ---</span></span>
+<span id="cb30-42"><a href="#cb30-42" aria-hidden="true" tabindex="-1"></a><span class="co"># The second step: run Bayesian Optimization on this optimal feature set.</span></span>
+<span id="cb30-43"><a href="#cb30-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-44"><a href="#cb30-44" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">现在，我们只在这10个特征上进行贝叶斯优化 (Optuna)..."</span>)</span>
+<span id="cb30-45"><a href="#cb30-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-46"><a href="#cb30-46" aria-hidden="true" tabindex="-1"></a><span class="co"># 定义目标函数，与之前类似，但这次使用的是筛选后的数据</span></span>
+<span id="cb30-47"><a href="#cb30-47" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> objective_top10(trial):</span>
+<span id="cb30-48"><a href="#cb30-48" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 定义超参数搜索空间</span></span>
+<span id="cb30-49"><a href="#cb30-49" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
+<span id="cb30-50"><a href="#cb30-50" aria-hidden="true" tabindex="-1"></a>        <span class="st">'n_estimators'</span>: trial.suggest_int(<span class="st">'n_estimators'</span>, <span class="dv">200</span>, <span class="dv">800</span>),</span>
+<span id="cb30-51"><a href="#cb30-51" aria-hidden="true" tabindex="-1"></a>        <span class="st">'max_depth'</span>: trial.suggest_int(<span class="st">'max_depth'</span>, <span class="dv">3</span>, <span class="dv">10</span>),</span>
+<span id="cb30-52"><a href="#cb30-52" aria-hidden="true" tabindex="-1"></a>        <span class="st">'min_samples_leaf'</span>: trial.suggest_int(<span class="st">'min_samples_leaf'</span>, <span class="dv">1</span>, <span class="dv">10</span>),</span>
+<span id="cb30-53"><a href="#cb30-53" aria-hidden="true" tabindex="-1"></a>        <span class="st">'max_features'</span>: trial.suggest_categorical(<span class="st">'max_features'</span>, [<span class="st">'sqrt'</span>, <span class="st">'log2'</span>]),</span>
+<span id="cb30-54"><a href="#cb30-54" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb30-55"><a href="#cb30-55" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb30-56"><a href="#cb30-56" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> RandomForestClassifier(random_state<span class="op">=</span><span class="dv">42</span>, <span class="op">**</span>params)</span>
+<span id="cb30-57"><a href="#cb30-57" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb30-58"><a href="#cb30-58" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ！！！ 关键不同点 ！！！</span></span>
+<span id="cb30-59"><a href="#cb30-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 注意：我们在这里使用 X_top10，而不是完整的 X</span></span>
+<span id="cb30-60"><a href="#cb30-60" aria-hidden="true" tabindex="-1"></a>    <span class="co"># CRITICAL DIFFERENCE: We are using X_top10 here, not the full X.</span></span>
+<span id="cb30-61"><a href="#cb30-61" aria-hidden="true" tabindex="-1"></a>    score <span class="op">=</span> cross_val_score(model, X_top10, y, cv<span class="op">=</span><span class="dv">5</span>, scoring<span class="op">=</span><span class="st">'roc_auc'</span>).mean()</span>
+<span id="cb30-62"><a href="#cb30-62" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb30-63"><a href="#cb30-63" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> score</span>
+<span id="cb30-64"><a href="#cb30-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-65"><a href="#cb30-65" aria-hidden="true" tabindex="-1"></a><span class="co"># 创建一个新的 "研究" (Study)</span></span>
+<span id="cb30-66"><a href="#cb30-66" aria-hidden="true" tabindex="-1"></a>study_top10 <span class="op">=</span> optuna.create_study(direction<span class="op">=</span><span class="st">'maximize'</span>, study_name<span class="op">=</span><span class="st">'RF_Top10_Optimization'</span>)</span>
+<span id="cb30-67"><a href="#cb30-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-68"><a href="#cb30-68" aria-hidden="true" tabindex="-1"></a><span class="co"># 运行优化，n_trials 可以根据需要调整</span></span>
+<span id="cb30-69"><a href="#cb30-69" aria-hidden="true" tabindex="-1"></a>study_top10.optimize(objective_top10, n_trials<span class="op">=</span><span class="dv">100</span>)</span>
+<span id="cb30-70"><a href="#cb30-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-71"><a href="#cb30-71" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 3. 打印最终优化结果 ---</span></span>
+<span id="cb30-72"><a href="#cb30-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the final optimization results</span></span>
+<span id="cb30-73"><a href="#cb30-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-74"><a href="#cb30-74" aria-hidden="true" tabindex="-1"></a>best_params_top10 <span class="op">=</span> study_top10.best_params</span>
+<span id="cb30-75"><a href="#cb30-75" aria-hidden="true" tabindex="-1"></a>best_score_top10 <span class="op">=</span> study_top10.best_value</span>
+<span id="cb30-76"><a href="#cb30-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-77"><a href="#cb30-77" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">在Top 10特征集上的贝叶斯优化完成!"</span>)</span>
+<span id="cb30-78"><a href="#cb30-78" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"找到的最佳超参数组合 (Best Parameters): </span><span class="ch">\n</span><span class="sc">{</span>best_params_top10<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb30-79"><a href="#cb30-79" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">最终模型的最佳平均 AUC 分数是: </span><span class="sc">{</span>best_score_top10<span class="sc">:.4f}</span><span class="ss">"</span>)</span>
+<span id="cb30-80"><a href="#cb30-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-81"><a href="#cb30-81" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 4. 训练最终的、最优化的模型 ---</span></span>
+<span id="cb30-82"><a href="#cb30-82" aria-hidden="true" tabindex="-1"></a><span class="co"># Train the final, most optimized model</span></span>
+<span id="cb30-83"><a href="#cb30-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-84"><a href="#cb30-84" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">正在使用找到的最佳特征和最佳超参数来训练最终模型..."</span>)</span>
+<span id="cb30-85"><a href="#cb30-85" aria-hidden="true" tabindex="-1"></a>final_model <span class="op">=</span> RandomForestClassifier(random_state<span class="op">=</span><span class="dv">42</span>,  <span class="op">**</span>best_params_top10)</span>
+<span id="cb30-86"><a href="#cb30-86" aria-hidden="true" tabindex="-1"></a>final_model.fit(X_top10, y)</span>
+<span id="cb30-87"><a href="#cb30-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-88"><a href="#cb30-88" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"最终模型训练完成！这个模型是我们整个分析过程的最终成果。"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>[I 2025-09-12 12:09:35,006] A new study created in memory with name: RF_Top10_Optimization</code></pre>
 </div>
+<div class="cell-output cell-output-stdout">
+<pre><code>--- 最终优化流程 ---
+已成功筛选出最重要的 10 个特征用于最终调优:
+['SCL90R_OCS', 'CGI_Depressive', 'SCL90R_Somatization', 'PSP_Total_Score', 'CGI_Negative', 'Duration_of_Illness', 'CGI_Positive', 'CGI_Cognitive', 'Age', 'DIEPSS_Overall_Severity']
+
+现在，我们只在这10个特征上进行贝叶斯优化 (Optuna)...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>[I 2025-09-12 12:09:37,678] Trial 0 finished with value: 0.7974902882310043 and parameters: {'n_estimators': 709, 'max_depth': 7, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 0 with value: 0.7974902882310043.
+[I 2025-09-12 12:09:38,587] Trial 1 finished with value: 0.8014817339301008 and parameters: {'n_estimators': 271, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:39,567] Trial 2 finished with value: 0.8006315628917478 and parameters: {'n_estimators': 293, 'max_depth': 4, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:40,647] Trial 3 finished with value: 0.8014801450926372 and parameters: {'n_estimators': 322, 'max_depth': 4, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:41,512] Trial 4 finished with value: 0.7991735820817267 and parameters: {'n_estimators': 222, 'max_depth': 9, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:44,209] Trial 5 finished with value: 0.7990501135224367 and parameters: {'n_estimators': 748, 'max_depth': 7, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:45,970] Trial 6 finished with value: 0.7985547616664362 and parameters: {'n_estimators': 502, 'max_depth': 5, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:46,889] Trial 7 finished with value: 0.7994638309095616 and parameters: {'n_estimators': 258, 'max_depth': 5, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:48,505] Trial 8 finished with value: 0.799350769235658 and parameters: {'n_estimators': 436, 'max_depth': 7, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:51,306] Trial 9 finished with value: 0.7988488554809331 and parameters: {'n_estimators': 781, 'max_depth': 5, 'min_samples_leaf': 1, 'max_features': 'sqrt'}. Best is trial 1 with value: 0.8014817339301008.
+[I 2025-09-12 12:09:52,952] Trial 10 finished with value: 0.8026295736672434 and parameters: {'n_estimators': 545, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:09:54,757] Trial 11 finished with value: 0.8025121268019404 and parameters: {'n_estimators': 597, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:09:56,509] Trial 12 finished with value: 0.8025114277134563 and parameters: {'n_estimators': 583, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:09:58,411] Trial 13 finished with value: 0.8019518073820567 and parameters: {'n_estimators': 634, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:00,327] Trial 14 finished with value: 0.7980027677548615 and parameters: {'n_estimators': 496, 'max_depth': 10, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:02,236] Trial 15 finished with value: 0.802179201799835 and parameters: {'n_estimators': 613, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:03,651] Trial 16 finished with value: 0.7990156039727292 and parameters: {'n_estimators': 396, 'max_depth': 6, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:05,581] Trial 17 finished with value: 0.7979236913143022 and parameters: {'n_estimators': 545, 'max_depth': 8, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:07,601] Trial 18 finished with value: 0.8022298698265466 and parameters: {'n_estimators': 671, 'max_depth': 3, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:08,972] Trial 19 finished with value: 0.798337599361923 and parameters: {'n_estimators': 388, 'max_depth': 6, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:10,729] Trial 20 finished with value: 0.8015777156012718 and parameters: {'n_estimators': 536, 'max_depth': 4, 'min_samples_leaf': 6, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:12,487] Trial 21 finished with value: 0.8024547062160087 and parameters: {'n_estimators': 585, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:14,451] Trial 22 finished with value: 0.8019002496063656 and parameters: {'n_estimators': 654, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:16,000] Trial 23 finished with value: 0.8007322951869347 and parameters: {'n_estimators': 479, 'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:17,927] Trial 24 finished with value: 0.7993457802860224 and parameters: {'n_estimators': 562, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:20,111] Trial 25 finished with value: 0.8017842962482782 and parameters: {'n_estimators': 698, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:22,078] Trial 26 finished with value: 0.800559477336028 and parameters: {'n_estimators': 611, 'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 10 with value: 0.8026295736672434.
+[I 2025-09-12 12:10:23,421] Trial 27 finished with value: 0.8026821959640351 and parameters: {'n_estimators': 443, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 27 with value: 0.8026821959640351.
+[I 2025-09-12 12:10:24,684] Trial 28 finished with value: 0.8006787831411634 and parameters: {'n_estimators': 367, 'max_depth': 5, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 27 with value: 0.8026821959640351.
+[I 2025-09-12 12:10:26,289] Trial 29 finished with value: 0.7973467049894263 and parameters: {'n_estimators': 444, 'max_depth': 6, 'min_samples_leaf': 6, 'max_features': 'sqrt'}. Best is trial 27 with value: 0.8026821959640351.
+[I 2025-09-12 12:10:27,720] Trial 30 finished with value: 0.8015735687354919 and parameters: {'n_estimators': 441, 'max_depth': 4, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 27 with value: 0.8026821959640351.
+[I 2025-09-12 12:10:29,317] Trial 31 finished with value: 0.8027416184851706 and parameters: {'n_estimators': 530, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 31 with value: 0.8027416184851706.
+[I 2025-09-12 12:10:30,882] Trial 32 finished with value: 0.8024012418353615 and parameters: {'n_estimators': 517, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 31 with value: 0.8027416184851706.
+[I 2025-09-12 12:10:32,395] Trial 33 finished with value: 0.8017477370982424 and parameters: {'n_estimators': 465, 'max_depth': 4, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 31 with value: 0.8027416184851706.
+[I 2025-09-12 12:10:34,256] Trial 34 finished with value: 0.8003893605088093 and parameters: {'n_estimators': 573, 'max_depth': 4, 'min_samples_leaf': 10, 'max_features': 'sqrt'}. Best is trial 31 with value: 0.8027416184851706.
+[I 2025-09-12 12:10:35,841] Trial 35 finished with value: 0.8027395688848425 and parameters: {'n_estimators': 526, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 31 with value: 0.8027416184851706.
+[I 2025-09-12 12:10:36,969] Trial 36 finished with value: 0.8030340281319562 and parameters: {'n_estimators': 336, 'max_depth': 4, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 36 with value: 0.8030340281319562.
+[I 2025-09-12 12:10:38,038] Trial 37 finished with value: 0.8030425919658845 and parameters: {'n_estimators': 326, 'max_depth': 4, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 37 with value: 0.8030425919658845.
+[I 2025-09-12 12:10:39,100] Trial 38 finished with value: 0.80309461050444 and parameters: {'n_estimators': 324, 'max_depth': 4, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 38 with value: 0.80309461050444.
+[I 2025-09-12 12:10:40,241] Trial 39 finished with value: 0.799110981885664 and parameters: {'n_estimators': 325, 'max_depth': 5, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 38 with value: 0.80309461050444.
+[I 2025-09-12 12:10:41,059] Trial 40 finished with value: 0.797393972903966 and parameters: {'n_estimators': 214, 'max_depth': 8, 'min_samples_leaf': 6, 'max_features': 'log2'}. Best is trial 38 with value: 0.80309461050444.
+[I 2025-09-12 12:10:42,049] Trial 41 finished with value: 0.8029259395193131 and parameters: {'n_estimators': 296, 'max_depth': 4, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 38 with value: 0.80309461050444.
+[I 2025-09-12 12:10:42,992] Trial 42 finished with value: 0.8025842600227839 and parameters: {'n_estimators': 279, 'max_depth': 4, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 38 with value: 0.80309461050444.
+[I 2025-09-12 12:10:44,166] Trial 43 finished with value: 0.7979568503521658 and parameters: {'n_estimators': 314, 'max_depth': 5, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 38 with value: 0.80309461050444.
+[I 2025-09-12 12:10:44,999] Trial 44 finished with value: 0.8026418712692112 and parameters: {'n_estimators': 250, 'max_depth': 4, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 38 with value: 0.80309461050444.
+[I 2025-09-12 12:10:46,195] Trial 45 finished with value: 0.8011576110875435 and parameters: {'n_estimators': 342, 'max_depth': 5, 'min_samples_leaf': 6, 'max_features': 'log2'}. Best is trial 38 with value: 0.80309461050444.
+[I 2025-09-12 12:10:47,015] Trial 46 finished with value: 0.8033251825971455 and parameters: {'n_estimators': 244, 'max_depth': 4, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:47,901] Trial 47 finished with value: 0.7975646934894207 and parameters: {'n_estimators': 240, 'max_depth': 5, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:49,013] Trial 48 finished with value: 0.7981127788608353 and parameters: {'n_estimators': 294, 'max_depth': 6, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:50,275] Trial 49 finished with value: 0.8000130761323249 and parameters: {'n_estimators': 358, 'max_depth': 5, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:51,239] Trial 50 finished with value: 0.8010956305380917 and parameters: {'n_estimators': 289, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:51,931] Trial 51 finished with value: 0.8011262315476388 and parameters: {'n_estimators': 206, 'max_depth': 4, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:53,237] Trial 52 finished with value: 0.8019321057975091 and parameters: {'n_estimators': 399, 'max_depth': 4, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:54,273] Trial 53 finished with value: 0.8028808165353493 and parameters: {'n_estimators': 313, 'max_depth': 4, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:55,207] Trial 54 finished with value: 0.79790157469681 and parameters: {'n_estimators': 264, 'max_depth': 5, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:56,410] Trial 55 finished with value: 0.7992486546518778 and parameters: {'n_estimators': 312, 'max_depth': 10, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:57,528] Trial 56 finished with value: 0.7999153785166933 and parameters: {'n_estimators': 336, 'max_depth': 4, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:58,413] Trial 57 finished with value: 0.7939838033908969 and parameters: {'n_estimators': 233, 'max_depth': 7, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:10:59,998] Trial 58 finished with value: 0.7960905065372718 and parameters: {'n_estimators': 415, 'max_depth': 6, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:11:00,978] Trial 59 finished with value: 0.8028706161988335 and parameters: {'n_estimators': 299, 'max_depth': 4, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:11:02,367] Trial 60 finished with value: 0.7986887959948585 and parameters: {'n_estimators': 369, 'max_depth': 8, 'min_samples_leaf': 6, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:11:03,353] Trial 61 finished with value: 0.8027565217805783 and parameters: {'n_estimators': 300, 'max_depth': 4, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:11:04,225] Trial 62 finished with value: 0.8017607337886942 and parameters: {'n_estimators': 265, 'max_depth': 4, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:11:05,399] Trial 63 finished with value: 0.8020949139723956 and parameters: {'n_estimators': 355, 'max_depth': 4, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:11:06,372] Trial 64 finished with value: 0.8008678071341981 and parameters: {'n_estimators': 278, 'max_depth': 5, 'min_samples_leaf': 6, 'max_features': 'log2'}. Best is trial 46 with value: 0.8033251825971455.
+[I 2025-09-12 12:11:07,358] Trial 65 finished with value: 0.8037308445783304 and parameters: {'n_estimators': 323, 'max_depth': 3, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:08,376] Trial 66 finished with value: 0.8028496117675659 and parameters: {'n_estimators': 334, 'max_depth': 3, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:09,515] Trial 67 finished with value: 0.8031817900160633 and parameters: {'n_estimators': 377, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:10,677] Trial 68 finished with value: 0.8031838396163911 and parameters: {'n_estimators': 383, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:11,888] Trial 69 finished with value: 0.8032432621375266 and parameters: {'n_estimators': 401, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:13,046] Trial 70 finished with value: 0.8030710957099799 and parameters: {'n_estimators': 382, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:14,199] Trial 71 finished with value: 0.802961704250617 and parameters: {'n_estimators': 381, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:15,451] Trial 72 finished with value: 0.8027349135910746 and parameters: {'n_estimators': 413, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:16,687] Trial 73 finished with value: 0.8027929379352422 and parameters: {'n_estimators': 409, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:17,943] Trial 74 finished with value: 0.8034633955680966 and parameters: {'n_estimators': 386, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:19,269] Trial 75 finished with value: 0.8027976885592581 and parameters: {'n_estimators': 425, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:20,425] Trial 76 finished with value: 0.802961704250617 and parameters: {'n_estimators': 381, 'max_depth': 3, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:21,493] Trial 77 finished with value: 0.8033472038843898 and parameters: {'n_estimators': 353, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:22,903] Trial 78 finished with value: 0.802961005162133 and parameters: {'n_estimators': 466, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:24,004] Trial 79 finished with value: 0.8034598524605532 and parameters: {'n_estimators': 364, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:25,125] Trial 80 finished with value: 0.8035132691760765 and parameters: {'n_estimators': 370, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:26,199] Trial 81 finished with value: 0.8033472038843898 and parameters: {'n_estimators': 353, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:27,270] Trial 82 finished with value: 0.8035166692882484 and parameters: {'n_estimators': 352, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:28,339] Trial 83 finished with value: 0.8035166692882484 and parameters: {'n_estimators': 352, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:29,415] Trial 84 finished with value: 0.8031216684064437 and parameters: {'n_estimators': 354, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:30,469] Trial 85 finished with value: 0.8032945339224742 and parameters: {'n_estimators': 347, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 65 with value: 0.8037308445783304.
+[I 2025-09-12 12:11:31,578] Trial 86 finished with value: 0.8037974804215503 and parameters: {'n_estimators': 363, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:32,688] Trial 87 finished with value: 0.8037394560773828 and parameters: {'n_estimators': 367, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:33,800] Trial 88 finished with value: 0.8032297093539629 and parameters: {'n_estimators': 367, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:35,173] Trial 89 finished with value: 0.8025173381888207 and parameters: {'n_estimators': 455, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:36,467] Trial 90 finished with value: 0.8026294306718716 and parameters: {'n_estimators': 428, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:37,563] Trial 91 finished with value: 0.8035200217352966 and parameters: {'n_estimators': 362, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:38,750] Trial 92 finished with value: 0.8026253791363398 and parameters: {'n_estimators': 393, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:39,863] Trial 93 finished with value: 0.8032297093539629 and parameters: {'n_estimators': 367, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:40,899] Trial 94 finished with value: 0.803572739362336 and parameters: {'n_estimators': 341, 'max_depth': 3, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 86 with value: 0.8037974804215503.
+[I 2025-09-12 12:11:41,860] Trial 95 finished with value: 0.8043518893660696 and parameters: {'n_estimators': 316, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 95 with value: 0.8043518893660696.
+[I 2025-09-12 12:11:42,822] Trial 96 finished with value: 0.8036294131946595 and parameters: {'n_estimators': 314, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 95 with value: 0.8043518893660696.
+[I 2025-09-12 12:11:43,779] Trial 97 finished with value: 0.8041311045121395 and parameters: {'n_estimators': 315, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 95 with value: 0.8043518893660696.
+[I 2025-09-12 12:11:44,765] Trial 98 finished with value: 0.8039075709693974 and parameters: {'n_estimators': 325, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 95 with value: 0.8043518893660696.
+[I 2025-09-12 12:11:45,707] Trial 99 finished with value: 0.8032945339224742 and parameters: {'n_estimators': 310, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 95 with value: 0.8043518893660696.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+在Top 10特征集上的贝叶斯优化完成!
+找到的最佳超参数组合 (Best Parameters): 
+{'n_estimators': 316, 'max_depth': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}
+
+最终模型的最佳平均 AUC 分数是: 0.8044
+
+正在使用找到的最佳特征和最佳超参数来训练最终模型...
+最终模型训练完成！这个模型是我们整个分析过程的最终成果。</code></pre>
+</div>
+</div>
+<p>同样运行了好几次，得到了较好的数据，<strong><em>是最终模型的最佳平均 AUC 分数是: 0.8044</em></strong></p>
+<p><strong><em>AUC 接近 0.805 通常意味着模型已经捕捉到了数据中大部分的可预测结构。这就是我们在机器学习中常说的“性能瓶颈”：再怎么调参、选特征，提升空间已经非常有限，这是我们随机森林的极限了，除非换一个更加适配这个数据的机器学习模型。</em></strong></p>
+<p><strong><em>模型的性能上限，往往不是由算法决定的，而是由数据本身的可预测性决定的。 如果数据中没有更多“可解释的信号”，再复杂的模型也无法凭空创造预测能力。</em></strong></p>
+<section id="概念引入性能天花板与不可约减误差-irreducible-error" class="level4">
+<h4 class="anchored" data-anchor-id="概念引入性能天花板与不可约减误差-irreducible-error">1. 概念引入：性能天花板与不可约减误差 (Irreducible Error)🧉</h4>
+<p>性能天花板（Performance Ceiling）。”</p>
+<p><strong>核心知识点：</strong><br>
+在机器学习中，一个模型的总误差可以被分解为两部分：</p>
+<p><strong>总误差 = 可约减误差 (Reducible Error) + 不可约减误差 (Irreducible Error)</strong></p>
+<ul>
+<li><p><strong>可约减误差：</strong> 这是我们可以通过选择更好的模型、做特征工程、调优超参数来减少的部分。我们之前做的所有工作，都是在努力<strong>将这部分误差降到最低</strong>。</p></li>
+<li><p><strong>不可约减误差：</strong> 这是数据本身固有的、无法被任何模型消除的“噪声”或不确定性。<strong>这个误差决定了我们性能天花板的高度。</strong></p></li>
+<li><p><strong>打个比方 (Analogy):</strong><br>
+这就像用麦克风录音。我们可以买更好的麦克风、调整录音棚的环境来减少背景噪音（降低<strong>可约减误差</strong>）。但是，声音本身的一些微小颤动、空气中的随机分子运动是无法被消除的（<strong>不可约减误差</strong>）。我们能做的，就是尽可能清晰地捕捉到“信号”，但我们无法消除所有的“噪声”。</p></li>
+</ul>
+</section>
+<section id="教学总结当我们触及天花板时该做什么" class="level4">
+<h4 class="anchored" data-anchor-id="教学总结当我们触及天花板时该做什么">教学总结：当我们触及天花板时，该做什么🤖？</h4>
+<p>这是最关键的教学部分。当模型调优不再有效时，真正的数据科学家会从以下几个方面思考，这也是未来的工作方向：</p>
+<p><strong>路径 A：获取更好的数据 (数据为中心 - The Data-Centric Approach)</strong><br>
+这是<strong>最重要、最有效</strong>的路径。</p>
+<ul>
+<li><p><strong>行动：</strong> 与领域专家（精神科医生、心理学家）合作，讨论是否可以收集新的、可能与主观幸福感相关的数据。比如，在下一次研究中加入“社会支持量表”、“生活事件记录”等。</p></li>
+<li><p><strong>结论：</strong> <strong>提升性能天花板的最好方法，是为模型提供更高信噪比、更丰富信息的数据。</strong></p></li>
+</ul>
+<p><strong>路径 B：尝试完全不同的模型 (模型为中心 - The Model-Centric Approach)</strong></p>
+<ul>
+<li><p><strong>行动：</strong> 我们已经证明了随机森林（一种基于决策树的集成模型）的极限。我们可以尝试结构完全不同的模型，比如：</p>
+<ul>
+<li><p><strong>深度学习/神经网络 (Deep Learning / Neural Networks):</strong> 如果有<strong><em>足够多的数据</em></strong>，神经网络能够捕捉到比树模型更高阶、更复杂的非线性关系。</p></li>
+<li><p><strong>梯度提升机 (Gradient Boosting Machines):</strong> 我们可以对之前测试过的 XGBoost 或 LightGBM 模型进行同样深入的特征选择和贝叶斯优化，有时它们在特定数据集上的表现会略胜于随机森林。</p></li>
+</ul></li>
+<li><p><strong>结论：</strong> 换一个更强大的模型<strong>有可能</strong>会略微提升性能，但这通常是在数据质量已经很好的前提下。如果数据本身信息量有限，换模型也只是“锦上添花”，而不会有质的飞跃。</p></li>
+</ul>
 <hr>
-<p>测试代码，和项目没关系</p>
-<div id="694b2597" class="cell" data-execution_count="10">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">100</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>100</code></pre>
-</div>
-</div>
-<div id="ecb30f46" class="cell" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"nihao"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>nihao</code></pre>
-</div>
-</div>
-<div id="023563fc" class="cell" data-execution_count="12">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello world"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hello world</code></pre>
-</div>
-</div>
-<div id="f542afab" class="cell" data-execution_count="13">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate synthetic data</span></span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">100</span></span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature A'</span>: np.random.normal(loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span><span class="dv">1</span>, size<span class="op">=</span>n),</span>
-<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature B'</span>: np.random.normal(loc<span class="op">=</span><span class="dv">5</span>, scale<span class="op">=</span><span class="dv">2</span>, size<span class="op">=</span>n),</span>
-<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature C'</span>: np.random.normal(loc<span class="op">=-</span><span class="dv">3</span>, scale<span class="op">=</span><span class="fl">1.5</span>, size<span class="op">=</span>n),</span>
-<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Class'</span>: np.random.choice([<span class="st">'Class 1'</span>, <span class="st">'Class 2'</span>, <span class="st">'Class 3'</span>], size<span class="op">=</span>n)</span>
-<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize with seaborn pairplot</span></span>
-<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(style<span class="op">=</span><span class="st">"whitegrid"</span>)</span>
-<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>plot <span class="op">=</span> sns.pairplot(data, hue<span class="op">=</span><span class="st">'Class'</span>, palette<span class="op">=</span><span class="st">'Set2'</span>, diag_kind<span class="op">=</span><span class="st">'kde'</span>)</span>
-<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">"Synthetic Data Visualization"</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
-<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-14-output-1.png" width="817" height="738" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+<section id="论文总结" class="level2">
+<h2 class="anchored" data-anchor-id="论文总结">论文总结🤗</h2>
+<p>this is what it is 没什么总结的，<strong>我们的机器学习得到了在我们测量的所有事物中，哪些与患者的主观幸福感最密切相关？即 OCS、躯体化、认知和抑郁是最重要的预测因素。我们确定了主要特征</strong></p>
+<p><strong><em><code>这也是差不多你们要写的论文的机器学习的大概流程</code></em></strong></p>
+<ul>
+<li>但是如果看我们的复现论文，他们接下来的步骤是</li>
+</ul>
+<section id="step-1-network-analysis-网络分析" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-network-analysis-网络分析">Step 1: Network Analysis (网络分析)🫥</h3>
+<p><strong>“为什么”（目的）：</strong><br>
+机器学习告诉我们，强迫症症状、躯体化症状、抑郁症和认知是最重要的预测因素。但它并没有告诉我们它们是如何相互关联的。强迫症症状和躯体化症状是否高度相关？抑郁症是否是连接一切的中心枢纽？</p>
+<p>网络分析帮助我们将症状的“生态系统”可视化。它将每个变量（症状、人口统计因素）视为一个“节点”（城市），并将它们之间的相关性视为一条“边”（高速公路）。相关性越强，高速公路就越粗。</p>
+<p>论文中的图3）：</p>
+<ul>
+<li><p><strong>社群（群落）：</strong> 他们寻找的是节点之间的连接比与网络其他部分的连接更紧密的集群。在论文中，他们发现了一个关键模式：</p>
+<ul>
+<li><p><strong>社区 1：</strong> 主观幸福感（SWB）、强迫症</p></li>
+<li><p><strong>社区 2：</strong> 精神病症状（阳性、阴性）、认知缺陷和社会心理功能 (PSP) 形成了另一个不同的集群。</p></li>
+<li><p>幸福感的内在体验与强迫症和躯体系统更密切相关</p></li>
+</ul></li>
+<li><p><strong>中心性：</strong> 该指标用于识别网络中最具“影响力”的节点。论文指出， <strong>抑郁症</strong>的“中介中心性”最高。</p>
+<ul>
+<li><strong>这是什么意思？</strong> 这意味着抑郁症是连接两个群体的关键<strong>桥梁</strong> 。要从“精神病症状”群体走向“主观幸福感”群体，通常需要经过“抑郁症”这一环节。这表明抑郁症起着关键的中介作用。</li>
+</ul></li>
+</ul>
+<p>这是一种可视化和探索性的工具。它从我们的机器学习模型中获取重要特征列表，并将其转化为地图。这张地图向我们展示了复杂症状网络的结构和关键因素，这让我们假设抑郁症是一个关键的中介因素。</p>
+</section>
+<section id="step-2-structural-equation-modeling-sem-结构方程模型" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-structural-equation-modeling-sem-结构方程模型">Step 2: Structural Equation Modeling (SEM) (结构方程模型)🍔</h3>
+<p>方向或因果关系。它显示了两座城市之间的高速公路，但没有显示交通走向</p>
+<p>看看论文中的图 4。这是他们的 SEM 分析结果。它就像一个流程图，展示了影响力的流动。</p>
+<ul>
+<li><p><strong>直接效应（直接效应）：</strong> 从一个变量到另一个变量的直线箭头。</p>
+<ul>
+<li>论文发现， <strong>强迫性行为对主观幸福感（SWB）的直接负面影响最为强烈</strong> （见粗红色箭头，系数为-0.59）。这是论文最重要的发现：高强迫性行为会直接摧毁患者的幸福感。</li>
+</ul></li>
+<li><p><strong>间接效应：</strong> 至少经过一个其他变量的路径。</p>
+<ul>
+<li><p>论文证实了抑郁症的“桥梁”作用。例如，阴性症状有一个箭头指向抑郁症，抑郁症也有一个箭头指向主观幸福感。这是一条<strong>间接路径</strong> 。这意味着阴性症状部分地通过增加抑郁来恶化主观幸福感 。</p></li>
+<li><p>OCS 还通过抑郁症对 SWB 产生间接影响 。</p></li>
+</ul></li>
+</ul>
+<p>SEM 是一种验证性工具，是分析的最终步骤，也是最有力的一步。它超越了“什么是重要的”（ML）和“它们如何关联”（网络分析）的范畴，从而检验了关于“什么导致什么”的特定理论。SEM 结果为本文的主要结论提供了最有力的证据：管理 OCS 对于改善精神分裂症患者的主观幸福感至关重要，这既是因为它强大的直接影响，也是因为它通过抑郁症产生的间接影响。</p>
+</section>
+</section>
+</section>
+<section id="我滴任务完成了" class="level1">
+<h1>我滴任务完成了🛫</h1>
 
 
-</section>
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

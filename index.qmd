@@ -459,7 +459,7 @@ import lightgbm as lgb
 # 我们将所有模型储存在一个字典中，方便循环调用
 models = {
     "Logistic Regression (LR)": LogisticRegression(max_iter=1000, random_state=42),
-    "Random Forest (RF)": RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42, n_jobs=-1),
+    "Random Forest (RF)": RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42),
     "Gradient Boosting (GBM)": GradientBoostingClassifier(n_estimators=200, max_depth=3, random_state=42),
     "XGBoost (XGB)": xgb.XGBClassifier(n_estimators=200, max_depth=3, use_label_encoder=False, eval_metric='logloss', random_state=42),
     "LightGBM (LGBM)": lgb.LGBMClassifier(n_estimators=200, max_depth=3, random_state=42, verbosity=-1)
@@ -677,7 +677,7 @@ print("--- 方法一: 特征选择 ---")
 print("首先，我们训练一个基础模型来获取特征重要性...")
 
 # 训练一个临时的随机森林模型来获取特征重要性排序
-temp_rf = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42, n_jobs=-1)
+temp_rf = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42)
 temp_rf.fit(X, y)
 
 # 创建一个包含特征名称和其重要性分数的 DataFrame
@@ -729,8 +729,8 @@ X_selected = X[top_features]
 
 print("\n使用筛选出的特征进行5折交叉验证...")
 # 使用与之前相同的模型配置
-model_on_selected_features = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42, n_jobs=-1)
-cv_scores_selected = cross_val_score(model_on_selected_features, X_selected, y, cv=5, scoring='roc_auc', n_jobs=-1)
+model_on_selected_features = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42)
+cv_scores_selected = cross_val_score(model_on_selected_features, X_selected, y, cv=5, scoring='roc_auc')
 
 # 打印结果
 mean_auc_selected = np.mean(cv_scores_selected)
@@ -756,8 +756,8 @@ X_selected = X[top_features]
 
 print("\n使用筛选出的特征进行5折交叉验证...")
 # 使用与之前相同的模型配置
-model_on_selected_features = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42, n_jobs=-1)
-cv_scores_selected = cross_val_score(model_on_selected_features, X_selected, y, cv=5, scoring='roc_auc', n_jobs=-1)
+model_on_selected_features = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42)
+cv_scores_selected = cross_val_score(model_on_selected_features, X_selected, y, cv=5, scoring='roc_auc' )
 
 # 打印结果
 mean_auc_selected = np.mean(cv_scores_selected)
@@ -782,8 +782,8 @@ X_selected = X[top_features]
 
 print("\n使用筛选出的特征进行5折交叉验证...")
 # 使用与之前相同的模型配置
-model_on_selected_features = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42, n_jobs=-1)
-cv_scores_selected = cross_val_score(model_on_selected_features, X_selected, y, cv=5, scoring='roc_auc', n_jobs=-1)
+model_on_selected_features = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42)
+cv_scores_selected = cross_val_score(model_on_selected_features, X_selected, y, cv=5, scoring='roc_auc')
 
 # 打印结果
 mean_auc_selected = np.mean(cv_scores_selected)
@@ -855,15 +855,15 @@ param_grid = {
 # Setup and run GridSearchCV
 
 # 初始化我们的基础模型
-rf_base = RandomForestClassifier(random_state=42, n_jobs=-1)
+rf_base = RandomForestClassifier(random_state=42)
 
 # 设置 GridSearchCV
 # estimator: 我们要调优的模型
 # param_grid: 我们定义的参数网格
 # cv=5: 使用5折交叉验证来评估每一种参数组合
 # scoring='roc_auc': 我们的评估指标
-# n_jobs=-1: 使用所有CPU核心并行计算
-grid_search = GridSearchCV(estimator=rf_base, param_grid=param_grid, cv=5, scoring='roc_auc', n_jobs=-1, verbose=1)
+
+grid_search = GridSearchCV(estimator=rf_base, param_grid=param_grid, cv=5, scoring='roc_auc' , verbose=1)
 
 # 在完整数据集上运行网格搜索
 grid_search.fit(X, y)
@@ -928,10 +928,10 @@ def objective(trial):
     }
     
     # 使用这组参数创建并评估模型
-    model = RandomForestClassifier(random_state=42, n_jobs=-1, **params)
+    model = RandomForestClassifier(random_state=42, **params)
     
     # 使用交叉验证来获得稳健的分数
-    score = cross_val_score(model, X, y, cv=5, scoring='roc_auc', n_jobs=-1).mean()
+    score = cross_val_score(model, X, y, cv=5, scoring='roc_auc', ).mean()
     
     # Optuna 的目标是最大化这个返回值
     return score
@@ -980,7 +980,7 @@ X = pd.get_dummies(X, columns=['Education'], drop_first=True)
 
 
 # 训练一个临时模型来获取特征重要性
-temp_rf = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42, n_jobs=-1)
+temp_rf = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=42, )
 temp_rf.fit(X, y)
 
 # 获取最重要的10个特征的名称
@@ -1014,12 +1014,12 @@ def objective_top10(trial):
         'max_features': trial.suggest_categorical('max_features', ['sqrt', 'log2']),
     }
     
-    model = RandomForestClassifier(random_state=42, n_jobs=-1, **params)
+    model = RandomForestClassifier(random_state=42, **params)
     
     # ！！！ 关键不同点 ！！！
     # 注意：我们在这里使用 X_top10，而不是完整的 X
     # CRITICAL DIFFERENCE: We are using X_top10 here, not the full X.
-    score = cross_val_score(model, X_top10, y, cv=5, scoring='roc_auc', n_jobs=-1).mean()
+    score = cross_val_score(model, X_top10, y, cv=5, scoring='roc_auc').mean()
     
     return score
 
@@ -1043,7 +1043,7 @@ print(f"\n最终模型的最佳平均 AUC 分数是: {best_score_top10:.4f}")
 # Train the final, most optimized model
 
 print("\n正在使用找到的最佳特征和最佳超参数来训练最终模型...")
-final_model = RandomForestClassifier(random_state=42, n_jobs=-1, **best_params_top10)
+final_model = RandomForestClassifier(random_state=42,  **best_params_top10)
 final_model.fit(X_top10, y)
 
 print("最终模型训练完成！这个模型是我们整个分析过程的最终成果。")
