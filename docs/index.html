@@ -359,7 +359,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="使用-python-生成合成数据" class="level4">
 <h4 class="anchored" data-anchor-id="使用-python-生成合成数据">使用 Python 生成合成数据</h4>
 <p>以下 Python 代码演示了如何生成一个与论文中描述的特征近似的合成数据集。此代码使用 numpy 和 pandas 库创建一个数据框，其中包含与原始研究中的变量具有相似统计特性和相关性的变量。变量不用Chinese</p>
-<div id="e0fd4629" class="cell" data-execution_count="1">
+<div id="710d308c" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入所需的库</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入所需的库</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -623,7 +623,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>包是可以认为是游戏的mod,都是大佬收集的算法或者其他的代码来实现你需要的功能，这些都是地基</li>
 </ul>
-<div id="a9e49ee8" class="cell" data-execution_count="2">
+<div id="9a2300a6" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 导入所需的库</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd                 <span class="co"># 导入 pandas 用于读取和处理数据</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np                  <span class="co"># 导入 numpy 用于数值计算</span></span>
@@ -637,7 +637,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="第二步导入数据" class="level4">
 <h4 class="anchored" data-anchor-id="第二步导入数据">第二步导入数据🤤</h4>
 <p>就是我们要的数据，即调查的数据，一般是XLSX(excel表格)，csv(数据格式万金油)，或者其他格式</p>
-<div id="60cd683f" class="cell" data-execution_count="3">
+<div id="16cb581d" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 1. 加载并准备数据 ---</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Load and Prepare the Data</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -655,7 +655,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>定义目标</strong>： 本文机器学习模型的主要目标并非预测准确的主观幸福感 (SWB) 评分，而是将患者分为两组：具有“高水平 SWB”的患者和不具有“高水平 SWB”的患者。我们遵循本文的思路，创建了一个二元目标变量 ( High_SWB )，其中 80 分及以上被视为“高”（编码为 1），低于 80 分则被视为“低”（编码为 0）。</li>
 </ul>
-<div id="feddb7cd" class="cell" data-execution_count="4">
+<div id="1a1b4ef1" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 定义目标变量 (Y)</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 根据论文，"高水平SWB" 定义为 SWN 总分达到或超过 80</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 我们创建一个名为 'High_SWB' 的新列，1 表示高SWB，0 表示非高SWB</span></span>
@@ -667,53 +667,331 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop([<span class="st">'SWN_Total_Score'</span>, <span class="st">'High_SWB'</span>], axis<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">'High_SWB'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+</section>
+<section id="特征工程" class="level4">
+<h4 class="anchored" data-anchor-id="特征工程">特征工程</h4>
+<p>特征工程是指从原始数据中提取有用的特征，以便于机器学习模型的训练和预测。</p>
+<p>特征工程包括以下几个方面：</p>
+<ol type="1">
+<li>特征选择：选择最相关的特征，以减少模型的复杂度，提高模型的泛化能力。即有的时候特征太多，且其中有无意义或者不重要的特征，这时候就需要选择最相关的特征，以减少模型的复杂度，提高模型的泛化能力。</li>
+<li>特征提取：从原始数据中提取有用的特征，以便于机器学习模型的训练和预测。</li>
+<li>特征变换：对特征进行变换，以便于机器学习模型的训练和预测。比如标准化，归一化，独热编码，等等。 对于一些其他数据类型，比如字符型，如是否为男或者女性，一般可以用1代表男，0代表女，因为模型一般无法了解字的真实含义，但是数字可以。 一般来说，对于特征工程这个步骤需要花费很多时间。我们这个例子的数据比较符合机器学习的类型，不需要太多更改</li>
+</ol>
+<p>独热编码是将分类变量转换为二进制变量，即将每个分类变量转换为多个二进制变量，每个二进制变量表示一个分类。比如这个例子教育是分为三类，且都为字符型，我们可以把教育分为三个二进制（0/1）变量，每个二进制变量表示一个分类。</p>
+<div id="64e71d35" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 处理分类变量</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 'Education' 列是文本类型，机器学习模型需要数值输入。</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 我们使用 "独热编码" (One-Hot Encoding) 将其转换为数值列。</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This converts the 'Education' column into multiple binary (0/1) columns.</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> pd.get_dummies(X, columns<span class="op">=</span>[<span class="st">'Education'</span>], drop_first<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>接下来我们要进行数据标准化，他的统计学意义我就不说了，但是为什么要进行标准化，标准化可以会将所有特征缩放到均值为0，标准差为1的范围，对于逻辑回归等线性模型很重要，而对于一些随机森林，神经网络等等的黑箱模型不太重要，但是我还是进行标准化。</p>
+<div id="b8150b8e" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 数据标准化 (对于逻辑回归等线性模型很重要)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># StandardScaler 会将所有特征缩放到均值为0，标准差为1的范围</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#先导入我们需要的包</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>X_scaled <span class="op">=</span> scaler.fit_transform(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>#### 机器学习 我们先定义一堆我们要用的机械学习的模型，论文里面用的是随机森林，逻辑回归，支持向量机，等等</p>
+<p>我们将使用五种机器学习模型来预测患者是否具有高水平的主观幸福感（SWB）。每种模型都有不同的特点和适用场景。</p>
+<section id="logistic-regression-lr" class="level5">
+<h5 class="anchored" data-anchor-id="logistic-regression-lr">1️⃣ Logistic Regression (LR)</h5>
+<p>. 逻辑回归是一种经典的线性模型，适用于二分类问题（如：高SWB vs 低SWB）。</p>
+<p>. 优点：简单、易解释、计算快。</p>
+<p>. 原理：根据每个变量的权重，计算一个概率值（0到1之间），判断属于哪个类别。</p>
+<p>. 适用场景：变量之间关系较简单、线性时效果好。</p>
+<p>2️⃣ Random Forest (RF) . 随机森林是一种集成学习方法，由多个决策树组成。</p>
+<p>. 优点：抗过拟合、能处理非线性关系、对缺失值和异常值鲁棒。</p>
+<p>. 原理：每棵树都在不同的数据子集上训练，最终通过“投票”决定预测结果。</p>
+<p>. 适用场景：变量多、关系复杂时表现优异。</p>
+<p>. 3️⃣ Gradient Boosting Machine (GBM) 梯度提升机是一种逐步优化的集成方法。</p>
+<p>. 优点：预测精度高，适合复杂数据结构。</p>
+<p>. 原理：每棵新树都专注于纠正前一棵树的错误，逐步提升整体性能。</p>
+<p>. 适用场景：需要高精度预测时，GBM是常用选择。</p>
+<p>.</p>
+<p>4️⃣ XGBoost (XGB) . 极端梯度提升是GBM的高效版本，在数据科学竞赛中非常流行。</p>
+<p>. 优点：速度快、性能强、支持缺失值处理和正则化。</p>
+<p>. 原理：在GBM基础上加入更多优化策略，如剪枝、并行计算。</p>
+<p>. 适用场景：大数据、高维度、需要快速训练时。</p>
+<p>5️⃣ LightGBM (LGBM) . 轻量级梯度提升机是另一种高效的GBM变体，专为大规模数据设计。</p>
+<p>. 优点：训练速度快、内存占用低、适合高维稀疏数据。</p>
+<p>. 原理：使用“叶子优先”策略构建树，提升效率。</p>
+<p>. 适用场景：数据量大、变量多时非常适合。</p>
+<p><strong>当然，随着现在算法的升级，还有很多算法在他们之上有更好的表现，也要根据数据和模型的用途进行匹配</strong></p>
+<p>📊 为什么要比较多个模型？ 不同模型对数据的敏感性不同，适合的场景也不同。</p>
+<p>比较多个模型可以找到最稳定、最准确的预测方法。</p>
+<div id="5c18260a" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  定义要比较的模型 ---</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 依旧导入需要的包</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier, GradientBoostingClassifier</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> xgboost <span class="im">as</span> xgb</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> lightgbm <span class="im">as</span> lgb</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 我们将所有模型储存在一个字典中，方便循环调用</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>models <span class="op">=</span> {</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Logistic Regression (LR)"</span>: LogisticRegression(max_iter<span class="op">=</span><span class="dv">1000</span>, random_state<span class="op">=</span><span class="dv">42</span>),</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Random Forest (RF)"</span>: RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">500</span>, max_depth<span class="op">=</span><span class="dv">5</span>, random_state<span class="op">=</span><span class="dv">42</span>, n_jobs<span class="op">=-</span><span class="dv">1</span>),</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Gradient Boosting (GBM)"</span>: GradientBoostingClassifier(n_estimators<span class="op">=</span><span class="dv">200</span>, max_depth<span class="op">=</span><span class="dv">3</span>, random_state<span class="op">=</span><span class="dv">42</span>),</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"XGBoost (XGB)"</span>: xgb.XGBClassifier(n_estimators<span class="op">=</span><span class="dv">200</span>, max_depth<span class="op">=</span><span class="dv">3</span>, use_label_encoder<span class="op">=</span><span class="va">False</span>, eval_metric<span class="op">=</span><span class="st">'logloss'</span>, random_state<span class="op">=</span><span class="dv">42</span>),</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"LightGBM (LGBM)"</span>: lgb.LGBMClassifier(n_estimators<span class="op">=</span><span class="dv">200</span>, max_depth<span class="op">=</span><span class="dv">3</span>, random_state<span class="op">=</span><span class="dv">42</span>, verbosity<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="使用-5-折交叉验证评估所有模型" class="level5">
+<h5 class="anchored" data-anchor-id="使用-5-折交叉验证评估所有模型">🧪 使用 5 折交叉验证评估所有模型</h5>
+<p>在这一部分，我们将对五种机器学习模型进行性能评估，使用的是一种非常稳健的方法：5 折交叉验证（5-fold cross-validation）。</p>
+<p>. ✅ 什么是交叉验证？ 交叉验证是一种将数据集分成多个“子集”来训练和测试模型的方法。</p>
+<p>. 在 5 折交叉验证中，我们将数据分成 5 份：</p>
+<p>. 每次用其中 4 份训练模型，剩下 1 份测试模型。</p>
+<p>. 这个过程重复 5 次，每次测试集都不同。</p>
+<p>. 最后我们计算 5 次的平均性能指标（如 AUC），得到一个更稳定的评估结果。</p>
+<p>. 这种方法比单次训练/测试划分更可靠，能减少“运气好/坏”带来的误差。</p>
+<p>. 📊 为什么选择 AUC？ . AUC 是衡量模型区分能力的指标，值越接近 1，模型越好。</p>
+<div id="46f4c912" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> {} <span class="co"># 创建一个空字典来储存结果</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"正在使用5折交叉验证评估每个模型..."</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 循环遍历我们定义的每个模型</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> model_name, model <span class="kw">in</span> models.items():</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 对线性模型（逻辑回归）使用标准化后的数据</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> model_name <span class="op">==</span> <span class="st">"Logistic Regression (LR)"</span>:</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        X_input <span class="op">=</span> X_scaled</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: <span class="co"># 对树模型使用原始编码后的数据</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>        X_input <span class="op">=</span> X</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 使用 cross_val_score 函数进行5折交叉验证</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># cv=5: 指定了折数</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># scoring='roc_auc': 指定评估指标为 AUC</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    cv_scores <span class="op">=</span> cross_val_score(model, X_input, y, cv<span class="op">=</span><span class="dv">5</span>, scoring<span class="op">=</span><span class="st">'roc_auc'</span>)</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 将每个模型的名称和其5次交叉验证的平均分及标准差存入结果字典</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>    results[model_name] <span class="op">=</span> {</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">'mean_auc'</span>: np.mean(cv_scores),</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">'std_auc'</span>: np.std(cv_scores)</span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 打印每个模型的评估结果</span></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span>model_name<span class="sc">}</span><span class="ss">: 平均 AUC = </span><span class="sc">{</span>results[model_name][<span class="st">'mean_auc'</span>]<span class="sc">:.4f}</span><span class="ss"> (标准差 = </span><span class="sc">{</span>results[model_name][<span class="st">'std_auc'</span>]<span class="sc">:.4f}</span><span class="ss">)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>正在使用5折交叉验证评估每个模型...
+  Logistic Regression (LR): 平均 AUC = 0.7916 (标准差 = 0.0327)
+  Random Forest (RF): 平均 AUC = 0.7977 (标准差 = 0.0466)
+  Gradient Boosting (GBM): 平均 AUC = 0.7571 (标准差 = 0.0341)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
+
+[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+
+d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
+
+[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+
+d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
+
+[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+
+d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
+
+[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+
+d:\pythontext\.venv\Lib\site-packages\xgboost\core.py:158: UserWarning:
+
+[09:46:29] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-08cbc0333d8d4aae1-1\xgboost\xgboost-ci-windows\src\learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  XGBoost (XGB): 平均 AUC = 0.7572 (标准差 = 0.0422)
+  LightGBM (LGBM): 平均 AUC = 0.7609 (标准差 = 0.0444)</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="可视化结果" class="level4">
+<h4 class="anchored" data-anchor-id="可视化结果">可视化结果</h4>
+<p>. 比较平均 AUC 分数： 查看打印的输出和条形图。您将看到五个模型的平均 AUC 分数。 与原始论文一致，您可能会发现所有高级模型（RF，GBM，XGB，LGBM）的表现非常相似，并且明显优于基线 Logistic 回归模型 。</p>
+<p>随机森林模型可能仍然略占优势，就像论文中提到的那样，AUC 得分在 0.79-0.80 左右 。这证实了我们之前的发现，但现在的置信度更高了。顶级模型之间性能接近，这是机器学习中一个非常常见且重要的发现。</p>
+<p>标准差（误差线）的重要性： 标准差（由条形图上的黑色“误差线”表示）告诉您模型的性能在 5 个不同折叠之间的差异有多大。 标准差越小（误差线越短），效果越好。 这意味着模型稳定，其性能不会严重依赖于训练时所用的特定数据子集。</p>
+<p>您可能会注意到基于树的模型具有相对较低的方差，这表明它们很稳定。</p>
+<div id="b62e1c13" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 将结果字典转换为 DataFrame，方便绘图</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>results_df <span class="op">=</span> pd.DataFrame(results).T.sort_values(by<span class="op">=</span><span class="st">'mean_auc'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>bars <span class="op">=</span> plt.bar(results_df.index, results_df[<span class="st">'mean_auc'</span>], yerr<span class="op">=</span>results_df[<span class="st">'std_auc'</span>], capsize<span class="op">=</span><span class="dv">5</span>, color<span class="op">=</span><span class="st">'skyblue'</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 在每个柱状图上显示数值</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar <span class="kw">in</span> bars:</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    yval <span class="op">=</span> bar.get_height()</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    plt.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="fl">2.0</span>, yval <span class="op">+</span> <span class="fl">0.01</span>, <span class="ss">f'</span><span class="sc">{</span>yval<span class="sc">:.3f}</span><span class="ss">'</span>, ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Mean AUC Score (平均AUC分数)'</span>)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Machine Learning Models (机器学习模型)'</span>)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Comparison of ML Models using 5-Fold Cross-Validation (使用5折交叉验证比较模型性能)'</span>)</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>, <span class="fl">1.0</span>) <span class="co"># 设置y轴范围为0到1</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">15</span>) <span class="co"># 旋转x轴标签，防止重叠</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">'y'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 26426 (\N{CJK UNIFIED IDEOGRAPH-673A}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 22120 (\N{CJK UNIFIED IDEOGRAPH-5668}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 23398 (\N{CJK UNIFIED IDEOGRAPH-5B66}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 20064 (\N{CJK UNIFIED IDEOGRAPH-4E60}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 27169 (\N{CJK UNIFIED IDEOGRAPH-6A21}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 22411 (\N{CJK UNIFIED IDEOGRAPH-578B}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 24179 (\N{CJK UNIFIED IDEOGRAPH-5E73}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 22343 (\N{CJK UNIFIED IDEOGRAPH-5747}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 20351 (\N{CJK UNIFIED IDEOGRAPH-4F7F}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 29992 (\N{CJK UNIFIED IDEOGRAPH-7528}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 25240 (\N{CJK UNIFIED IDEOGRAPH-6298}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 20132 (\N{CJK UNIFIED IDEOGRAPH-4EA4}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 21449 (\N{CJK UNIFIED IDEOGRAPH-53C9}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 39564 (\N{CJK UNIFIED IDEOGRAPH-9A8C}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 35777 (\N{CJK UNIFIED IDEOGRAPH-8BC1}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 27604 (\N{CJK UNIFIED IDEOGRAPH-6BD4}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 36739 (\N{CJK UNIFIED IDEOGRAPH-8F83}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 24615 (\N{CJK UNIFIED IDEOGRAPH-6027}) missing from font(s) Arial.
+
+d:\pythontext\.venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning:
+
+Glyph 33021 (\N{CJK UNIFIED IDEOGRAPH-80FD}) missing from font(s) Arial.
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-10-output-2.png" width="965" height="645" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <hr>
 <p>测试代码，和项目没关系</p>
-<div id="962ed603" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">100</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="694b2597" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>100</code></pre>
 </div>
 </div>
-<div id="05217f28" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"nihao"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="ecb30f46" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"nihao"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>nihao</code></pre>
 </div>
 </div>
-<div id="2a706115" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello world"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="023563fc" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello world"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Hello world</code></pre>
 </div>
 </div>
-<div id="44b194a9" class="cell" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate synthetic data</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">100</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature A'</span>: np.random.normal(loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span><span class="dv">1</span>, size<span class="op">=</span>n),</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature B'</span>: np.random.normal(loc<span class="op">=</span><span class="dv">5</span>, scale<span class="op">=</span><span class="dv">2</span>, size<span class="op">=</span>n),</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature C'</span>: np.random.normal(loc<span class="op">=-</span><span class="dv">3</span>, scale<span class="op">=</span><span class="fl">1.5</span>, size<span class="op">=</span>n),</span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Class'</span>: np.random.choice([<span class="st">'Class 1'</span>, <span class="st">'Class 2'</span>, <span class="st">'Class 3'</span>], size<span class="op">=</span>n)</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize with seaborn pairplot</span></span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(style<span class="op">=</span><span class="st">"whitegrid"</span>)</span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>plot <span class="op">=</span> sns.pairplot(data, hue<span class="op">=</span><span class="st">'Class'</span>, palette<span class="op">=</span><span class="st">'Set2'</span>, diag_kind<span class="op">=</span><span class="st">'kde'</span>)</span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">"Synthetic Data Visualization"</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="f542afab" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate synthetic data</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature A'</span>: np.random.normal(loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span><span class="dv">1</span>, size<span class="op">=</span>n),</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature B'</span>: np.random.normal(loc<span class="op">=</span><span class="dv">5</span>, scale<span class="op">=</span><span class="dv">2</span>, size<span class="op">=</span>n),</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Feature C'</span>: np.random.normal(loc<span class="op">=-</span><span class="dv">3</span>, scale<span class="op">=</span><span class="fl">1.5</span>, size<span class="op">=</span>n),</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Class'</span>: np.random.choice([<span class="st">'Class 1'</span>, <span class="st">'Class 2'</span>, <span class="st">'Class 3'</span>], size<span class="op">=</span>n)</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize with seaborn pairplot</span></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(style<span class="op">=</span><span class="st">"whitegrid"</span>)</span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>plot <span class="op">=</span> sns.pairplot(data, hue<span class="op">=</span><span class="st">'Class'</span>, palette<span class="op">=</span><span class="st">'Set2'</span>, diag_kind<span class="op">=</span><span class="st">'kde'</span>)</span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">"Synthetic Data Visualization"</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/cell-9-output-1.png" width="817" height="738" class="figure-img"></p>
+<p><img src="index_files/figure-html/cell-14-output-1.png" width="817" height="738" class="figure-img"></p>
 </figure>
 </div>
 </div>
